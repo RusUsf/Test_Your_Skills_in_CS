@@ -8,23 +8,24 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\rus_d\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\User\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\rus_d\\OneDrive\\Desktop\\Coding\\Laptop\\CSharp\\Test_Your_Skills_in_CS\\PracticeCode\\PracticeCode.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Desktop\\Learn_to_Code\\CSharp\\Test_Your_Skills_in_CS\\PracticeCode\\PracticeCode.csproj",
       "projectName": "PracticeCode",
-      "projectPath": "C:\\Users\\rus_d\\OneDrive\\Desktop\\Coding\\Laptop\\CSharp\\Test_Your_Skills_in_CS\\PracticeCode\\PracticeCode.csproj",
-      "packagesPath": "C:\\Users\\rus_d\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\rus_d\\OneDrive\\Desktop\\Coding\\Laptop\\CSharp\\Test_Your_Skills_in_CS\\PracticeCode\\obj\\",
+      "projectPath": "C:\\Users\\User\\Desktop\\Learn_to_Code\\CSharp\\Test_Your_Skills_in_CS\\PracticeCode\\PracticeCode.csproj",
+      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\User\\Desktop\\Learn_to_Code\\CSharp\\Test_Your_Skills_in_CS\\PracticeCode\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\rus_d\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -32,6 +33,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -44,9 +46,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "default"
       }
     },
     "frameworks": {
@@ -68,7 +67,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-preview.1.23115.2\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-preview.5.23303.2\\RuntimeIdentifierGraph.json"
       }
     }
   }
