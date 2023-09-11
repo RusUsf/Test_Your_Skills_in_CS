@@ -218,9 +218,37 @@
 
 
 
-// Jump Statements
-// 1.P25 Break vs Continue
+//// Jump Statements
+//// 1.P25 Break vs Continue
 
+//Console.WriteLine("Illustration: break vs continue");
+//int myInt10 = 1;
+//while (myInt10 != 5)
+//{
+//    Console.WriteLine($"Now, myInt10 = {myInt10}");
+//    myInt10++;
+//    if(myInt10 == 4)
+//    {
+//        Console.WriteLine("Entered inside if loop");
+//        //break;
+//        continue;
+//    }
+//}
+
+//// Use of the var Keyword
+//// 1.P26
+//var myInt20 = 25;
+//var myInt21 = 25.5f;
+//var myInt22 = 25.5;
+//var myInt23 = 25.5M;
+//var myChar20 = 'c';
+//var myString20 = "Alternate between difficult and simple concepts!";
+
+//List<object> myList20 = new List<object> { myInt20, myInt21,myInt22,myInt23,myChar20,myString20 };
+//foreach (var item in myList20)
+//{
+//    Console.Write(item.GetType()+", ");
+//}
 
 
 
