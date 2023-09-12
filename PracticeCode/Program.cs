@@ -250,6 +250,210 @@
 //    Console.Write(item.GetType()+", ");
 //}
 
+//// Chapter 2 - String and Arrays
+
+////2T1
+//string name = "Ruslan";
+
+//double balance = 250.56;
+
+//// Using formatting
+//Console.WriteLine("Hi {0}, you have ${1} left", name, balance);
+
+//// Using String.Format
+//string str = String.Format("Hi {0}, you have ${1} left", name, balance);
+//Console.WriteLine(str);
+
+//// Using string concatenation
+//Console.WriteLine("Hi " + name + " ,you have $" + balance + " left.");
+
+//// Using string interpolation
+//Console.WriteLine($"Hi {name}, you have ${balance} left.");
+
+//// 2.T5 String.Join() and String.Cocat()
+//string[] animalStore = { "Tigers", "Lions", "Elephants" };
+//string animals = string.Concat(animalStore);
+//Console.WriteLine($"The circus has {animals}");
+
+//animals = string.Join(", ",animalStore);
+//Console.WriteLine($"the circus has {animals}");
+
+
+//List<object> list= new List<object> { 3,"Ruslan",false };
+//string myList = string.Join(", ", list);
+//Console.WriteLine(myList);
+
+//foreach (object o in list)
+//    Console.Write($"{o}, ");
+
+
+//// 2.T6
+//string str1 = "Hello reader!";
+//string str2 = "Hello reader!";
+//Console.WriteLine(object.ReferenceEquals(str1,str2)); // True
+
+//string str3 = "reder!";
+//string str4 = "Hello" + str3;
+//Console.WriteLine(object.ReferenceEquals(str1,str2)); // True
+//Console.WriteLine(object.ReferenceEquals(str1, str4)); // False
+
+
+//// Arrays
+//// 2.T8
+//int[] myNumbers20 = new int[3];
+//myNumbers20[0] = 5;
+//myNumbers20[1] = 12;
+//myNumbers20[2] = 7;
+
+//for (int i = 0; i < 3; i++)
+//    Console.WriteLine(myNumbers20[i]);
+
+//// Using Length
+//for (int i = 0; i < myNumbers20.Length; i++)
+//    Console.WriteLine(myNumbers20[i]);
+
+//// Alternative ways to creat an Array
+//int[] myNumbers201 = new int[] { 5, 12, 7 };
+//int[] myNumbers202 = { 5, 12, 7 };
+//var myNumbers2023 = new int[] { 5, 12, 7 };
+
+//// 2.T10 Rectangular array
+//int[,] rectArray = { { 10, 20, 30 }, 
+//                     { 40, 50, 60 }, };
+
+//Console.WriteLine("The rectangular array is as follows:");
+//for (int i = 0; i < 2; i++)
+//{
+//    for (int j = 0; j < 3; j++)
+//    {
+//        Console.WriteLine(rectArray[i, j]+"\t");
+//    }
+//    Console.WriteLine();
+//}
+
+// 2.T11 Jagged Array
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
