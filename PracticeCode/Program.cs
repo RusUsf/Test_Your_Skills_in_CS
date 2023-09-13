@@ -1,6 +1,7 @@
 ﻿//using PracticeCode.MyNamespaceOne;
 //using PracticeCode.MyNamespaceTwo;
 
+//// Chapter One
 
 //// 1.T13 Decimal vs double vs float in finances
 //var b = 6;
@@ -41,15 +42,15 @@
 //List<int> list = new List<int> { 1, 2, 3, 4, 5 };
 
 //Console.WriteLine("Executing the 'foreach' loop:");
-//foreach (var i in list)
+//foreach (var myItem in list)
 //{
-//    Console.WriteLine("\t" + i);
+//    Console.WriteLine("\t" + myItem);
 //}
 
 //Console.WriteLine("Executing the 'for' loop:");
-//for (int i = 0; i < list.Count; i++)
+//for (int myItem2 = 0; myItem2 < list.Count; myItem2++)
 //{
-//    Console.WriteLine("\t" + list[i]);
+//    Console.WriteLine("\t" + list[myItem2]);
 //}
 
 
@@ -69,8 +70,9 @@
 //Console.WriteLine($"The min value of an int is: {int.MinValue}");
 //int flag9 = int.MaxValue;
 //Console.WriteLine($"Currently, the flag is {flag9}");
-//flag9++;
-//Console.WriteLine($"Post increment, the flag is: {flag9}"); // Overflow no exception by default can be enabled globally
+
+////flag9++;
+////Console.WriteLine($"Post increment, the flag is: {flag9}"); // Overflow no exception by default can be enabled globally
 
 ////Adding Check in place
 ////int flag10 = int.MaxValue;
@@ -184,25 +186,25 @@
 //while (i < 3)
 //{
 //    Console.WriteLine($"The current value: {i}");
-//    i++ ;
+//    i++;
 //}
 
-//for (int j = 0; j < 3; j++)
+//for (int myJ = 0; myJ < 3; myJ++)
 //{
-//    Console.WriteLine($"The current value: {j}");
+//    Console.WriteLine($"The current value: {myJ}");
 //}
 
 //// 1.P18 Increment by 3
-//for(int k=0; k < 8; k += 3)
+//for (int k = 0; k < 8; k += 3)
 //{
 //    Console.WriteLine($"The curent value: {k}");
 //}
 
-// CAUTION: Infinite loop, not bool or null is not allowed in while() statement
+//// CAUTION: Infinite loop, not bool or null is not allowed in while() statement
 
 //// goto statement
 //int flag30 = 1;
-//while(flag30 != 3)
+//while (flag30 != 3)
 //{
 //    Console.WriteLine($"flag is now {flag30}");
 //    flag30++;
@@ -227,7 +229,7 @@
 //{
 //    Console.WriteLine($"Now, myInt10 = {myInt10}");
 //    myInt10++;
-//    if(myInt10 == 4)
+//    if (myInt10 == 4)
 //    {
 //        Console.WriteLine("Entered inside if loop");
 //        //break;
@@ -244,24 +246,25 @@
 //var myChar20 = 'c';
 //var myString20 = "Alternate between difficult and simple concepts!";
 
-//List<object> myList20 = new List<object> { myInt20, myInt21,myInt22,myInt23,myChar20,myString20 };
+//List<object> myList20 = new List<object> { myInt20, myInt21, myInt22, myInt23, myChar20, myString20 };
 //foreach (var item in myList20)
 //{
-//    Console.Write(item.GetType()+", ");
+//    Console.Write(item.GetType() + ", ");
 //}
 
-//// Chapter 2 - String and Arrays
+//// Chapter Two - String and Arrays
 
 ////2T1
 //string name = "Ruslan";
 
 //double balance = 250.56;
 
+
 //// Using formatting
-//Console.WriteLine("Hi {0}, you have ${1} left", name, balance);
+//Console.WriteLine("Hi {0}, you have ${1} left.", name, balance);
 
 //// Using String.Format
-//string str = String.Format("Hi {0}, you have ${1} left", name, balance);
+//string str = String.Format("Hi {0}, you have ${1} left.", name, balance);
 //Console.WriteLine(str);
 
 //// Using string concatenation
@@ -270,31 +273,35 @@
 //// Using string interpolation
 //Console.WriteLine($"Hi {name}, you have ${balance} left.");
 
-//// 2.T5 String.Join() and String.Cocat()
+//// 2.T5 String.Join() and String.Concat()
 //string[] animalStore = { "Tigers", "Lions", "Elephants" };
 //string animals = string.Concat(animalStore);
 //Console.WriteLine($"The circus has {animals}");
 
-//animals = string.Join(", ",animalStore);
+//animals = string.Join(", ", animalStore);
 //Console.WriteLine($"the circus has {animals}");
 
+//Console.WriteLine("\nEnter [A] to continue...");
+//Console.Read();
 
-//List<object> list= new List<object> { 3,"Ruslan",false };
-//string myList = string.Join(", ", list);
-//Console.WriteLine(myList);
+//List<object> myList = new List<object> { 3, "Ruslan", false };
+//string myListOne = string.Join(", ", myList);
+//Console.WriteLine(myListOne);
 
-//foreach (object o in list)
+//foreach (object o in myList)
 //    Console.Write($"{o}, ");
 
+//Console.WriteLine("\nPress [enter] to continue...");
+//Console.Read();
 
 //// 2.T6
 //string str1 = "Hello reader!";
 //string str2 = "Hello reader!";
-//Console.WriteLine(object.ReferenceEquals(str1,str2)); // True
+//Console.WriteLine(object.ReferenceEquals(str1, str2)); // True
 
 //string str3 = "reder!";
 //string str4 = "Hello" + str3;
-//Console.WriteLine(object.ReferenceEquals(str1,str2)); // True
+//Console.WriteLine(object.ReferenceEquals(str1, str2)); // True
 //Console.WriteLine(object.ReferenceEquals(str1, str4)); // False
 
 
@@ -305,199 +312,62 @@
 //myNumbers20[1] = 12;
 //myNumbers20[2] = 7;
 
-//for (int i = 0; i < 3; i++)
-//    Console.WriteLine(myNumbers20[i]);
+//for (int myCounter = 0; myCounter < 3; myCounter++)
+//    Console.WriteLine(myNumbers20[myCounter]);
 
 //// Using Length
-//for (int i = 0; i < myNumbers20.Length; i++)
-//    Console.WriteLine(myNumbers20[i]);
+//for (int myCounterI = 0; myCounterI < myNumbers20.Length; myCounterI++)
+//    Console.WriteLine(myNumbers20[myCounterI]);
 
-//// Alternative ways to creat an Array
+//// Alternative ways to create an Array
 //int[] myNumbers201 = new int[] { 5, 12, 7 };
 //int[] myNumbers202 = { 5, 12, 7 };
 //var myNumbers2023 = new int[] { 5, 12, 7 };
 
 //// 2.T10 Rectangular array
-//int[,] rectArray = { { 10, 20, 30 }, 
+//int[,] rectArray = { { 10, 20, 30 },
 //                     { 40, 50, 60 }, };
 
 //Console.WriteLine("The rectangular array is as follows:");
-//for (int i = 0; i < 2; i++)
+//for (int myCounter_i = 0; myCounter_i < 2; myCounter_i++)
 //{
-//    for (int j = 0; j < 3; j++)
+//    for (int myCounter_j = 0; myCounter_j < 3; myCounter_j++)
 //    {
-//        Console.WriteLine(rectArray[i, j]+"\t");
+//        Console.WriteLine(rectArray[myCounter_i, myCounter_j] + "\t");
 //    }
 //    Console.WriteLine();
 //}
 
-// 2.T11 Jagged Array
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+////2.T11 Jagged Array
+//int[][] jaggedArray = new int[][]
+//{
+//    new int []{0,1 },
+//    new int []{2,3,4},
+//};
+
+//// using 'for' loop
+//Console.WriteLine("The jagged array is as follow:");
+//for (int i = 0; i < jaggedArray.Length; i++)
+//{
+//    for (int j = 0; j < jaggedArray[i].Length; j++)
+//    {
+//        Console.Write(jaggedArray[i][j]+"\t");
+//    }
+//    Console.WriteLine();
+//}
+
+//// using 'foreach' loop 
+//foreach (int[] rows in jaggedArray)
+//{
+//    foreach (int item in rows)
+//    {
+//        Console.Write(item + "\t");
+//    }
+//    Console.WriteLine();
+//}
+
+//// Chapter Two - Programming Skills
+//// String Fundamentals
+string text1 = string.Concat("Hello", "World!");
+Console.WriteLine("The text is:"+text1);
+Console.WriteLine($"The text is:{text1}");
