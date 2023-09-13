@@ -367,7 +367,88 @@
 //}
 
 //// Chapter Two - Programming Skills
-//// String Fundamentals
-string text1 = string.Concat("Hello", "World!");
-Console.WriteLine("The text is:"+text1);
-Console.WriteLine($"The text is:{text1}");
+//// String Fundamentals 
+//// 2.P1
+//string text1 = string.Concat("Hello", "World!");
+//Console.WriteLine("The text is:"+text1);
+//Console.WriteLine($"The text is:{text1}");
+
+//// 2.P2
+//string text2 = "test";
+//Console.Write($"The length of 'text2' is {text2.Length}");
+
+//// Using for loop
+//for (int i = 0; i < text2.Length; i++)
+//{
+//    Console.Write($"\nThe text2 [{i}] contains: {text2[i]}"); // Counter does not repeate same letter index
+//}
+
+////Using foreach loop
+//Console.WriteLine("\nUsing foreach loop:");
+//foreach (char c in text2)
+//    Console.Write($"\nThe text2 [{text2.IndexOf(c)}] contains: {c}"); //Note same letters have same index
+
+//// 2.P3 $@ can be used to string iterpolate and not use escape character '\' for file paths example
+//string text3 = @"Do not expect immediate results! Celebrate ""small"" accomplishments!";
+//Console.WriteLine(text3);
+//Console.WriteLine(text3.ToUpper());
+//Console.WriteLine(text3.ToLower());
+
+//// 2.P4 How can you print a URL such as http//google.com?
+//// User of verbatim identifier (@)
+//string url = @"https:\\google.com";
+//Console.WriteLine(url);
+
+//// 2.P5 Trim() method
+//string text5 = " Retrieve from memory! ";
+//Console.WriteLine($"Original line: '{text5}'");
+//Console.WriteLine($"Trimmed line: '{text5.Trim()}'");
+
+//// 2.P6 
+//char[] trimChars = { 'A', 'b', '!', '-' };
+//string text6 = "Adopt Growth Mindset - belief in the ability to learn and grow!";
+//Console.WriteLine($"Original line: '{text6}'");
+//Console.WriteLine($"Trimmed line: '{text6.Trim(trimChars)}");
+//Console.WriteLine($"New trimmed line: '{text6.TrimEnd(trimChars)}'");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
