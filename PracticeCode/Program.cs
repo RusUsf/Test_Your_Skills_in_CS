@@ -411,6 +411,46 @@
 //Console.WriteLine($"Trimmed line: '{text6.Trim(trimChars)}");
 //Console.WriteLine($"New trimmed line: '{text6.TrimEnd(trimChars)}'");
 
+//// 2.P7
+//string emptyString = string.Empty;
+//string? nullString = null;
+//Console.WriteLine("Length of the emptyString is {0}", emptyString.Length);
+////Console.WriteLine("Length of the nullSTring is {0}", nullString.Length);    // NullReferenceException
+
+//// IsNullOrEmpty()
+//Console.WriteLine(string.IsNullOrEmpty(emptyString));    // True
+//Console.WriteLine(string.IsNullOrEmpty(nullString));     // True
+
+//// 2.P8
+//string text8 = "Reviewing the concepts of C#.";
+//string welcome1 = text8.PadLeft(text8.Length + 2, '*');
+//string welcome2 = welcome1.PadRight(welcome1.Length + 3, '#');
+//Console.WriteLine($"Original line:'{text8}'");
+//Console.WriteLine($"Updated line:'{welcome2}");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
