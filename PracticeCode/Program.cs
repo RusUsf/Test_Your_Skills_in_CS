@@ -428,7 +428,38 @@
 //Console.WriteLine($"Original line:'{text8}'");
 //Console.WriteLine($"Updated line:'{welcome2}");
 
+// 2.P9
+Console.WriteLine("\n---2.P9---");
+Console.WriteLine("Enter the string:");
+string? inputStr = Console.ReadLine();
+string? reverseStr = ReverseString(inputStr);
+Validate(inputStr, reverseStr);
 
+// Reversing a string
+static string ReverseString(string str)
+{
+    char[] tempArray = str.ToCharArray();
+    // Reverses the sequence of the elements
+    Array.Reverse(tempArray);
+    // Change the reversed array to a string
+    string reverseStr = new(tempArray);
+    // Return this string
+    return reverseStr;
+}
+
+// Check for the palindrome string
+
+static void Validate(string str1, string str2)
+{
+    if (str1.Equals(str2))
+    {
+        Console.WriteLine($"The string: '{str1}' is a palindrome string");
+    }
+    else
+    {
+        Console.WriteLine($"The string '{str1}' is a not palindrome string");
+    }
+}
 
 
 
