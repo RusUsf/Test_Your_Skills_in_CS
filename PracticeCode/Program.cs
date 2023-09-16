@@ -530,7 +530,24 @@
 //    }
 //}
 
+// Array Fundamentals
+// 2.P14
+int row = 2, column = 3;
+int[,] elements = new int[row, column];
+elements[0, 0] = 2;
+elements[0, 2] = -16;
+elements[1, 0] = 6;
+elements[1, 2] = 19;
 
+Console.WriteLine("The rectangular array is a as follows:");
+for (int i = 0; i < row; i++)
+{
+    for (int j = 0; j < column; j++)
+    {
+        Console.Write(elements[i,j]+"\t");
+    }
+    Console.WriteLine();
+}
 
 
 
