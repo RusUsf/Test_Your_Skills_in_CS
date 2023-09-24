@@ -822,6 +822,7 @@
 
 //// 3.P15 Structure type can't inherit from  other class or structure type
 //// 3.P21
+//// Testing the Default Value Expression
 //using System.Drawing;
 
 //Point point1 = new Point();
@@ -845,7 +846,29 @@
 //    }
 //}
 
+//// 3.P22 Testing a Nondestructive Mutations
 
+//Employee emp1 = new Employee("Sam",1);
+//Console.WriteLine(emp1);
+
+//Employee emp2 = emp1 with { Id = 2 };
+//Console.WriteLine(emp2);
+//struct Employee
+//{
+//    public string Name;
+//    public int Id;
+//    public Employee(string name, int id)
+//    {
+//        Name = name;
+//        Id = id;
+//    }
+
+//    public override string ToString()
+//    {
+//        string emp = Name + " has ID " + Id;
+//        return emp;
+//    }
+//}
 
 
 
