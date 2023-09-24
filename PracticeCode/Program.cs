@@ -870,8 +870,46 @@
 //    }
 //}
 
+////Part II OBJECT-ORIENTED PROGRAMMING
+//// Classes and Objects
 
+////4T.2
+//Console.WriteLine("***Class and Object Demo in C#.");
+//// Creating an object of Sample
+//Sample sample1 = new Sample(5);
+//Sample sample2 = new(6);
+//Console.WriteLine($"sample1._id = {sample1._id}");
+//Console.WriteLine($"sample2._id = {sample2._id}");
+//class Sample
+//{
+//    internal int _id;
+//    public Sample(int id)
+//    {
+//        this._id = id;
+//    }
+//}
 
+//// 4.T6 Constructor
+//Sample sample = new Sample();
+//Console.WriteLine($"The variable _flag is initialized with {sample._flag}");
+//class Sample
+//{
+//    internal int _flag;
+//    //internal Sample()
+//    //{
+//    //    this._flag = 10;
+//    //}
+//}
+
+//// 4.T8 "this" keyword
+//class Sample
+//{
+//    internal int id;
+//    public Sample(int id)
+//    {
+//        this.id = id;  // this keyword helps compiler distinguish between instance and local variables
+//    }
+//}
 
 
 
