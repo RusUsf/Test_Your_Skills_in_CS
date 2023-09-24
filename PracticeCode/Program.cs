@@ -701,6 +701,7 @@
 //}
 
 ////3.P5 Cannot use non-value types to define enumerations
+////3.P6
 //Console.WriteLine($"The members of BigNumbers are: {Enum.GetUnderlyingType(typeof(BigNumbers))}");
 //Console.WriteLine($"The members of SmallNumbers are {Enum.GetUnderlyingType(typeof(SmallNubmers))}");
 //enum BigNumbers
@@ -717,7 +718,7 @@
 //    Num3 = 21
 //};
 
-////3.P6
+////3.P7
 
 //foreach (Numbers num in Enum.GetValues(typeof(Numbers)))
 //{
@@ -732,9 +733,57 @@
 //    Num5 =95
 //};
 
+//// 3.P8
+//using System.Globalization;
+//foreach (Numbers num in Enum.GetValues(typeof(Numbers)))
+//{
+//    Console.WriteLine($"{num} is storing {(int)num}");
+//}
+//enum TrafficLight : byte
+//{
+//    Red,
+//    Green = (byte)Numbers.Num3,
+//    Yellow
+//};
 
+//enum Numbers
+//{
+//    Num1 = -12,
+//    Num2 = TrafficLight.Red,
+//    Num3,
+//    Num4=100
+//};
 
+//// 3.P9 No Circular references
+//// 3.P10 enum members must be constant
+//using System.Reflection.Emit;
 
+//Console.WriteLine($"The Code1 = {(int)Test.Codes.Code2}");
+//Console.WriteLine($"The Code2 = {(Test.Codes)2}");
+//public class Test
+//{
+//    const int flag = 2;
+//    public enum Codes
+//    {
+//        Code1 = 1,
+//        Code2 = flag,
+//        Code3 = 3
+//    };
+//}
+
+//// 3.P11
+//Console.WriteLine($"Type0= {(int)Sample.ErrorTypes.NetworkError}");
+//Console.WriteLine($"Type2= {(Sample.ErrorTypes)2}");
+
+//class Sample
+//{
+//    public enum ErrorTypes
+//    {
+//        NetworkError,
+//        CodeError,
+//        DeviceError,
+//    }
+//}
 
 
 
