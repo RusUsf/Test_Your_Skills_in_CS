@@ -786,6 +786,66 @@
 //}
 
 
+//// 3.P13 Flags Enumeration
+//Console.WriteLine(ErrorTypes.NetworkError & ErrorTypes.CodeError);
+//Console.WriteLine(ErrorTypes.DeviceError | ErrorTypes.CodeError | ErrorTypes.NetworkError);
+
+//[Flags]
+//public enum ErrorTypes
+//{
+//    NoError=0,
+//    NetworkError=1,
+//    CodeError=2,
+//    DeviceError=4,
+//};
+
+//// 3.P14 The struct Type Fundamentals
+//Employee emp1 = new Employee("Ruslan");
+//Console.WriteLine($"{emp1.Name} is a {emp1.Occupation()}");
+//interface IPerson
+//{
+//    string Occupation();
+//}
+
+//struct Employee : IPerson
+//{
+//    public string Name;
+//    public Employee(string name = null)
+//    {
+//        Name = name;
+//    }
+//    public string Occupation()
+//    {
+//        return "salaried person.";
+//    }
+//}
+
+//// 3.P15 Structure type can't inherit from  other class or structure type
+//// 3.P21
+//using System.Drawing;
+
+//Point point1 = new Point();
+//Console.WriteLine($"Point_1:{point1}");
+
+//Point point2 = default(Point);
+//Console.WriteLine($"Point_2:{point2}");
+//struct Point
+//{
+//    int _xCoordinate = 1;
+//    int _yCoordinate;
+
+//    public Point()
+//    {
+//        _yCoordinate = 2;
+//    }
+//    public override string ToString()
+//    {
+//        string temp ="("+_xCoordinate+","+_yCoordinate+")";
+//        return temp;
+//    }
+//}
+
+
 
 
 
