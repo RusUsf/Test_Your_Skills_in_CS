@@ -599,15 +599,138 @@
 //Console.WriteLine($"scores[3]={scores[3]}");
 //Console.WriteLine($"scores[4]={scores[4]}");
 
+//// Chapter 3 Enumerations and Structure Types
+////3.T1
+//Console.WriteLine((int)ErrorTypes.CodeError);
+//int errorType = (int)ErrorTypes.DeviceError;
+//Console.WriteLine(errorType);
+//enum ErrorTypes
+//{
+//    NetworkError,
+//    CodeError,
+//    DeviceError,
+//};
 
+////3.T5 Casting enumeration conversions
+//Measurement position = (Measurement)Alignment.TowardRight;
+//Console.WriteLine($"The current position is {position}");
+//Console.WriteLine($"Its integral value is {(int)position}");
+//public enum Measurement : int
+//{
+//    Left,
+//    Middle,
+//    Right
+//}
+//public enum Alignment : uint
+//{
+//    TowardLeft = 0,
+//    TowardMiddle = 1,
+//    TowardRight = 2,
+//}
 
+//// Structures in C#
+//Employee myEmployee = new Employee(1, "Rus");
+//Console.WriteLine($"Name: {myEmployee.Name}, ID: {myEmployee.Id}");
 
+//Employee myEmployeeTwo = new();
+//myEmployeeTwo.Name = "Jack";
+//myEmployeeTwo.Id = 2;
+//Console.WriteLine($"Name: {myEmployeeTwo.Name}, ID: {myEmployeeTwo.Id}");
 
+//Employee myEmployeeThree;
+//myEmployeeThree.Name = "Kate";
+//myEmployeeThree.Id = 3;
+//Console.WriteLine($"Name: {myEmployeeThree.Name}, ID: {myEmployeeThree.Id}");
+//struct Employee
+//{
+//    public int Id;
+//    public string Name;
+//    public Employee(int id, string name)
+//    {
+//        this.Id = id;
+//        this.Name = name;
+//    }
+//}
 
+////3.P1
+//Console.WriteLine($"Type1 = {(int)Codes.Type1}");
+//Console.WriteLine($"Type2 = {Codes.Type2}");
+//Console.WriteLine($"Type3 = {(int)Codes.Type3}");
+//enum Codes
+//{
+//    Type1,
+//    Type2,
+//    Type3
+//}
 
+////3.P2
+//Console.WriteLine($"Val4 = {(int)Values.Val4}");
+//enum Values
+//{
+//    Val1=25,
+//    Val2=52,
+//    Val3=65,
+//    Val4
+//};
 
+////3.P3
+//TrafficLight light0 = TrafficLight.Red;
+//Console.WriteLine($"The integral value of {light0} is {(int)light0}");
+//var light1 = TrafficLight.Green;
+//Console.WriteLine($"The light1 is {light1}");
+//var light2 = (TrafficLight)2;
+//Console.WriteLine($"The light2 is {light2}");
+//var light3 = (TrafficLight)3;
+//Console.WriteLine($"The light3 is {light3}");
+//var light75 = (TrafficLight)75;
+//Console.WriteLine($"The light75 is {light75}");
+//enum TrafficLight : byte
+//{
+//    Red,
+//    Green,
+//    Yellow
+//};
 
+//// 3.P4
+//Console.WriteLine($"Val2 = {(byte)Values.Val2}");
+//enum Values : byte
+//{
+//    Val1,
+//    Val2,
+//    Val3
+//}
 
+////3.P5 Cannot use non-value types to define enumerations
+//Console.WriteLine($"The members of BigNumbers are: {Enum.GetUnderlyingType(typeof(BigNumbers))}");
+//Console.WriteLine($"The members of SmallNumbers are {Enum.GetUnderlyingType(typeof(SmallNubmers))}");
+//enum BigNumbers
+//{
+//    Num1 = 1001,
+//    Num2 = 7005,
+//    Num3 = 3005
+//};
+
+//enum SmallNubmers : short
+//{
+//    Num1 = 10,
+//    Num2 = 7,
+//    Num3 = 21
+//};
+
+////3.P6
+
+//foreach (Numbers num in Enum.GetValues(typeof(Numbers)))
+//{
+//    Console.WriteLine($"{num} has stored {(int)num}");
+//}
+//enum Numbers
+//{
+//    Num1 = 75,
+//    Num2 = -17,
+//    Num3,
+//    Num4 = 0,
+//    Num5 =95
+//};
 
 
 
