@@ -911,9 +911,57 @@
 //    }
 //}
 
+//// 4.P1
+//Sample sample = new();
+//Console.WriteLine($"sample.i={sample.i}");
+//Console.WriteLine($"sample.d={sample.d}");
+//class Sample
+//{
+//    internal int i = 5;
+//    internal double d;
+//    internal Sample()
+//    {
+//        Console.WriteLine($"Current value of i is: {i}");
+//        Console.WriteLine($"Current value of d is: {d}");
 
+//        //Changing values
+//        i += 2;
+//        d++;
+//    }
+//}
 
+//// 4.P2
+//Sample sample = new(j:6,i:5);
+//Console.WriteLine($"sample._i={sample._i}");
+//Console.WriteLine($"sample._j={sample._j}");
+//class Sample
+//{
+//    internal int _i;
+//    internal int _j;
+//    internal Sample(int i=0, int j=0)
+//    {
+//        this._i = i;
+//        this._j = j;
+//    }
+//}
 
+//// 4.P3
+//Sample sample = new();
+//Console.WriteLine($"sample._flag={sample._flag}");
+//Console.WriteLine($"sample._number={sample._number}");
+//class Sample
+//{
+//    internal int _flag;
+//    internal double _number;
+//    internal Sample() : this(5) { }
+//    internal Sample(int i)
+//    {
+//        this._flag = i;
+//        this._number = _flag * 2;
+//    }
+//}
+
+//4.P4
 
 
 
