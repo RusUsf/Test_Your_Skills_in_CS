@@ -961,11 +961,133 @@
 //    }
 //}
 
-//4.P4
+////4.P4
+//Employee emp1 = new();
+//Employee emp2 = new("Bob");
+//Employee emp3 = new("Sumit", 2);
 
+//Console.WriteLine("Employee Details:");
+//Console.WriteLine($"Name: {emp1.Name}, Id: {emp1.Id}");
+//Console.WriteLine($"Name: {emp2.Name}, Id: {emp2.Id}");
+//Console.WriteLine($"Name: {emp3.Name}, Id: {emp3.Id}");
+//class Employee
+//{
+//    public string Name;
+//    public int Id;
 
+//    public Employee(string name = "Rus", int id = 0)
+//    {
+//        this.Name = name;
+//        this.Id = id;
+//    }
+//}
 
+////4.P5
 
+//Employee emp1 = new() { Name = "Bob", Id = 1 };
+//Employee emp2 = new("Kate") { Id = 3 };
+
+//Console.WriteLine("Employee Details");
+//Console.WriteLine($"Name: {emp1.Name}, Id: {emp1.Id}");
+//Console.WriteLine($"Name: {emp2.Name}, Id: {emp2.Id}");
+//class Employee
+//{
+//    public string Name;
+//    public int Id;
+//    public Employee() { }
+//    public Employee(string name)
+//    {
+//        this.Name = name;
+//    }
+//}
+
+////4.P6 in the Namespace default access modifier - internal
+
+////4.P7
+//Sample.NestedSample nested = new();
+//Console.WriteLine($"Flag2 = {nested.Flag2}");
+//class Sample
+//{
+//    public int Flag1;
+//    public Sample()
+//    {
+//        Flag1 = 1;
+//        Console.WriteLine("Sample is initialized.");
+//    }
+
+//    public class NestedSample
+//    {
+//        public int Flag2;
+//        public NestedSample()
+//        {
+//            Flag2 = 2;
+//            Console.WriteLine("NestedSample is initialized.");
+//        }
+//    }
+//}
+
+//// 4.P8 class memebers have private access by defaults
+
+//// 4.P9
+
+//Sample sample = new(7,7);
+//var sample1 = sample;
+//sample1.flag2 = 3;
+//sample1._flag1 = 3;
+//Console.WriteLine($"The value of sample1._flag1 = {sample1._flag1}");
+//Console.WriteLine($"The value of sample1.flag2 = {sample1.flag2}");
+
+//sample1.Increment();
+//Console.WriteLine($"The value of flag1 after increment = {sample1._flag1}");
+//Console.WriteLine($"The value of flag2 after increment = {sample1.flag2}");
+
+//class Sample
+//{
+//    public int _flag1;
+//    public int flag2;
+//    public Sample(int i = 5, int j = 5)
+//    {
+//        this._flag1 = i;
+//        this.flag2 = j;
+//        Increment();
+//    }
+//    public void Increment()
+//    {
+//        _flag1++;
+//        flag2++;
+//        Console.WriteLine($"_flag1={_flag1}");
+//        Console.WriteLine($"_flag2={flag2}");
+//    }
+//}
+
+//// 4.P10
+//Sample sample = new();
+//sample.AddTwoNumbers(5, 10.7);
+//class Sample
+//{
+//    public void AddTwoNumbers(int num1, double num2)
+//    {
+//        var number1 = num1;
+//        var number2 = num2;
+//        Console.WriteLine($"Result: {number1 + number2}");
+//    }
+//}
+
+////4.P11
+//Sample sample = new();
+//sample.AddTwoNubmers();
+//class Sample
+//{
+//    int _flag1 = 5;
+//    int _flag2 = 7;
+
+//    public void AddTwoNubmers()
+//    {
+//        var number1 = _flag1;
+//        var number2 = _flag2;
+//        Console.WriteLine(number1 + number2);
+//    }
+//}
 
 
 
