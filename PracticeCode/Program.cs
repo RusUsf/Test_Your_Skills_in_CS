@@ -1106,11 +1106,144 @@
 //    }
 //}
 
+//// Chapter 5 Inheritence
+//// 5.T2
+//class Parent
+//{
+//    // Some Code
+//}
+//class Child : Parent  
+//{
+//    // Some Codes
+//}
 
+//class Chiled2 : Parent
+//{
+//    // Some Code
+//}
 
+//class Granchild : Child
+//{
+//    // Some Code
+//}
 
+//// Multiple inheritance demo
 
+//interface IParent1
+//{
+//    // Some Code
+//}
 
+//interface IParent2
+//{
+//    // Some Code
+//}
+
+//class MyClass : IParent1, IParent2
+//{
+//    // Some Code
+//}
+
+//// 5T.5 Private members also inherited
+//B obB = new B();
+//Console.WriteLine(obB._flag1);
+//class A
+//{
+//    private int _flag1;
+//}
+//class B : A
+//{
+//}
+
+//// Fundamentals
+//// 5.P1
+
+//GrandChild grandChild = new GrandChild();
+//class Parent
+//{
+//    public Parent()
+//    {
+//        Console.WriteLine("The parent class constructor is callled");
+//    }
+//}
+
+//class Child : Parent
+//{
+//    public Child()
+//    {
+//        Console.WriteLine("The child class constructor is called");
+//    }
+//}
+
+//class GrandChild : Child
+//{
+//    public GrandChild()
+//    {
+//        Console.WriteLine("The grandchild class constructor is called.");
+//    }
+//}
+
+//// Re-writing in expression-body style
+
+//GrandChild grandChild = new GrandChild();
+//class Parent
+//{
+//    public Parent() => Console.WriteLine("The parent class constructor is called");
+//}
+
+//class Child : Parent
+//{
+//    public Child() => Console.WriteLine("The child class constructor is called");
+//}
+
+//class GrandChild : Child
+//{
+//    public GrandChild() => Console.WriteLine("The grandchild class constructor is called");
+//}
+
+//// 5.P2
+//B b = new B();
+//Console.WriteLine(b.x);
+//Console.WriteLine(b.y);
+//class A
+//{
+//    public int x = 1;
+//}
+
+//class B : A
+//{
+//    public int y = 2;
+//}
+
+//// 5.P3
+
+//Child child = new Child(1, 2);
+//child.Display();
+//class Parent
+//{
+//    protected int a;
+//    public Parent() { }
+//    public Parent(int a)
+//    {
+//        this.a = a;
+//    }
+//}
+
+//class Child : Parent
+//{
+//    internal int b;
+//    public Child(int a, int b) : base(a)
+//    {
+//        this.b = b;
+//    }
+
+//    public void Display()
+//    {
+//        Console.WriteLine("Initialized values are:");
+//        Console.WriteLine($"a={a}");
+//        Console.WriteLine($"b={b}");
+//    }
+//}
 
 
 
