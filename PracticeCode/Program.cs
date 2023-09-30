@@ -1383,10 +1383,79 @@
 
 //// 5.P18 Method signatures must be the same for overriding to work!
 
-//
+////5.P19 Method overridng and overloading together
+
+//Parent parent = new Parent();
+//int value1 = parent.GetNumber(5);
+//Console.WriteLine($"Value1:{value1}");
+
+//Child child = new Child();
+//int value2 = child.GetNumber(5);
+//int value3 = child.GetNumber(5,7);
+//Console.WriteLine($"Value2: {value2}");
+//Console.WriteLine($"Value3: {value3}");
+
+//class Parent
+//{
+//    public virtual int GetNumber(int i) => i;
+//}
+
+//class Child : Parent
+//{
+//    public override int GetNumber(int i) => i + 2;
+//    public int GetNumber(int i, int j) => i + j;
+//}
 
 
+//// 5.P20, 5.P21 return type, method parameters and access specifiers of virtual and overridden methos must be the same
 
+//// 5.P22 Method Hiding
+//Console.WriteLine("Understanding the new Keyword in C#.");
+//Parent parent = new Parent();
+//Console.WriteLine(parent.GetNumber(5));
+//Console.WriteLine(parent.GetNumber(5,7));
+
+//Console.WriteLine("-----.");
+//Child child = new Child();
+//Console.WriteLine(child.GetNumber(5));
+//Console.WriteLine(child.GetNumber(5,7));
+//class Parent
+//{
+//    internal virtual int GetNumber(int i) => i;
+//    public virtual int GetNumber(int i, int j) => i + j;
+//}
+
+//class Child : Parent
+//{
+//    internal override int GetNumber(int i) => i + 2;
+//    internal new int GetNumber(int i, int j) => i + j + 15;
+//}
+
+//// 5.P23 Covariance and Contravariance
+//Console.WriteLine("Experimenting covariance.");
+//Parent parent = new Parent();
+//Console.WriteLine($"The flag value in the parent class is:  {parent.GetFlag(5).Flag}");
+//Child child = new Child();
+//Console.WriteLine($"The flag value in the child class is: {child.GetFlag(5).Flag}");
+//public class Parent
+//{
+//    public int Flag;
+
+//    public virtual Parent GetFlag(int flag)
+//    {
+//        this.Flag = flag;
+//        return this;
+//    }
+//}
+
+//public class Child : Parent
+//{
+//    public override Child GetFlag(int flag)
+//    {
+//        this.Flag = flag * 2;
+//        return this;
+//    }
+//}
 
 
 
