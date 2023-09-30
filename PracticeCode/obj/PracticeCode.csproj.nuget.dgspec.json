@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Desktop\\Learn_to_Code\\CSharp\\Test_Your_Skills_in_CS\\PracticeCode\\PracticeCode.csproj": {}
+    "C:\\Users\\rus_d\\OneDrive\\Desktop\\Coding\\Dotnet\\Test_Your_Skills_in_CS\\PracticeCode\\PracticeCode.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Desktop\\Learn_to_Code\\CSharp\\Test_Your_Skills_in_CS\\PracticeCode\\PracticeCode.csproj": {
+    "C:\\Users\\rus_d\\OneDrive\\Desktop\\Coding\\Dotnet\\Test_Your_Skills_in_CS\\PracticeCode\\PracticeCode.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\Learn_to_Code\\CSharp\\Test_Your_Skills_in_CS\\PracticeCode\\PracticeCode.csproj",
+        "projectUniqueName": "C:\\Users\\rus_d\\OneDrive\\Desktop\\Coding\\Dotnet\\Test_Your_Skills_in_CS\\PracticeCode\\PracticeCode.csproj",
         "projectName": "PracticeCode",
-        "projectPath": "C:\\Users\\User\\Desktop\\Learn_to_Code\\CSharp\\Test_Your_Skills_in_CS\\PracticeCode\\PracticeCode.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\Learn_to_Code\\CSharp\\Test_Your_Skills_in_CS\\PracticeCode\\obj\\",
+        "projectPath": "C:\\Users\\rus_d\\OneDrive\\Desktop\\Coding\\Dotnet\\Test_Your_Skills_in_CS\\PracticeCode\\PracticeCode.csproj",
+        "packagesPath": "C:\\Users\\rus_d\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\rus_d\\OneDrive\\Desktop\\Coding\\Dotnet\\Test_Your_Skills_in_CS\\PracticeCode\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\rus_d\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

@@ -1307,10 +1307,83 @@
 //    public string Add(string s1, string s2) => string.Concat(s1, ",", s2);
 //}
 
+//// 5.P9 return type not part of method signature for method overloading
 
+//// 5.P10 Constructor Overloading
+//Employee employee = new Employee();
+//Employee employee3 = new Employee(2);
+//Employee employee2 = new Employee("Rus", 3);
+//class Employee
+//{
+//    public Employee() =>
+//        Console.WriteLine("Employee name: Unknown, ID: Not Given");
+//    public Employee(int id) =>
+//        Console.WriteLine($"Employee name: Unknown, ID: {id}");
+//    public Employee(string name, int id) =>
+//        Console.WriteLine($"Employee name: {name}, ID: {id}");
+//}
 
+//// 5.P11
+//Console.WriteLine("Overloading the Main() method.");
+//Main(5);
+//static void Main(int a)
+//{
 
+//    Console.WriteLine("I am inside Main(int a) now.");
+//}
 
+//// 5.P12
+//Console.WriteLine("Overloading the Main() method");
+//Main();
+//static void Main() => Console.WriteLine("I am inside Main() now.");
+
+//// 5.P13 memeber names cannot be the same as their enclosing type
+
+////5.P14 Method Overriding
+//Dervied dervied = new Dervied();
+//dervied.DoNotChangeMe();
+//dervied.ChangeMe();
+//class Parent
+//{
+//    public virtual void ChangeMe()
+//    {
+//        Console.WriteLine("Initial version of the ChangeMe().");
+//    }
+
+//    public void DoNotChangeMe()
+//    {
+//        Console.WriteLine("Initial version of the DoNotChangeMe().");
+//    }
+//}
+
+//class Dervied : Parent
+//{
+//    public override void ChangeMe()
+//    {
+//        Console.WriteLine("Updated version of the ChangeMe().");
+//    }
+//}
+
+//// 5.P15 Cannot override inherited member when it is not marked virtual, abstract, or override
+
+//// 5.P16 & 5.P17
+//Derived derived = new Derived();
+//derived.ShowMe();
+//class Parent
+//{
+//    public virtual void ShowMe()=>
+//        Console.WriteLine("The ShowMe() of Sample");
+//}
+
+//class Derived : Parent
+//{
+//    public override void ShowMe()=>
+//        Console.WriteLine("The ShowMe() of Derived.");
+//}
+
+//// 5.P18 Method signatures must be the same for overriding to work!
+
+//
 
 
 
