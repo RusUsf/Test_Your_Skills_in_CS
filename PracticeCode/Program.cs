@@ -1245,12 +1245,67 @@
 //    }
 //}
 
+//// 5.P4
+//Employee emp = new Employee() { name = "Ruslan",ssn="12345", id = "E002" };
+//emp.DisplayInfo();
+//class Person
+//{
+//    public string ssn = "123-45-6789";
+//    public string name = "K. Peterson";
+
+//    public Person(string name = "", string ssn = "")
+//    {
+//        this.name = name;
+//        this.ssn = ssn;
+//    }
+
+//    protected void GetInfo()
+//    {
+//        Console.WriteLine($"Name: {name}");
+//        Console.WriteLine($"SSN: {ssn}");
+//    }
+//}
+
+//class Employee : Person
+//{
+//    public string id;
+
+//    public Employee() => id = "E001";
+
+//    public void DisplayInfo()
+//    {
+//        base.GetInfo();
+//        Console.WriteLine($"ID:{id}");
+//    }
+//}
 
 
+//// 5.P5 ChildClass cannot derive from sealed type 'Parent'
+
+//// 5.P6
+//Polygon polygon = new Square();
+//class Polygon
+//{
+//    public Polygon() => Console.WriteLine("Polygon class constructor.");
+//}
+//sealed class Square : Polygon
+//{
+//    public Square() => Console.WriteLine("Square class constructor.");
+//}
 
 
+//// 5.P7 constructors are not inherited at all
 
+//// 5.P8 Method Overloading
 
+//Sample sample = new Sample();
+//Console.WriteLine(sample.Add(2,3));
+//Console.WriteLine(sample.Add("Ruslan","Rus"));
+//class Sample
+//{
+//    public int Add(int x, int y) => x + y;
+//    public string Add(string s1, string s2) => string.Concat(s1, ",", s2);
+//}
 
 
 
