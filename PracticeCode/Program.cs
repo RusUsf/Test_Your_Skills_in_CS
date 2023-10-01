@@ -1458,6 +1458,82 @@
 //}
 
 
+//// Chapter 6 - Polymorphism
+//Console.WriteLine("Polymorphic code example.");
+
+//Animal animal = new Animal();
+//animal.Sound();
+//animal = new Tiger();
+//animal.Sound();
+//animal = new Dog();
+//animal.Sound();
+
+//class Animal
+//{
+//    public virtual void Sound()
+//    {
+//        Console.WriteLine("An animal can make sounds.");
+//    }
+//}
+
+//class Tiger : Animal
+//{
+//    public override void Sound()
+//    {
+//        Console.WriteLine("Tiger roar.");
+//    }
+//}
+
+//class Dog : Animal
+//{
+//    public override void Sound()
+//    {
+//        Console.WriteLine("Dog bark.");
+//    }
+//}
+
+//// 6.T4
+//Home home = new CompleteHome();
+//home.ShowStatus();
+//abstract class Home
+//{
+//    public abstract void ShowStatus();
+//}
+//class CompleteHome : Home
+//{
+//    public override void ShowStatus()
+//    {
+//        Console.WriteLine("The home construction is finished.");
+//    }
+//}
+
+//// 6.T6 Interfaces
+//Tiger tiger = new Tiger();
+//tiger.Sound(); 
+//interface IAnimal
+//{
+//    void Sound();
+//}
+
+//class Tiger : IAnimal
+//{
+//    public void Sound()
+//    {
+//        Console.WriteLine("Tiger roar.");
+//    }
+//}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
