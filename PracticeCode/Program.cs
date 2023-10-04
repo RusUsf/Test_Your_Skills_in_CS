@@ -1523,7 +1523,7 @@
 //    }
 //}
 
-//// Chapter 6 Programming Quesitions
+//// Chapter 6 Programming Questions
 
 //// 6.P1
 //Console.WriteLine("Understanding the new Keyword in C#.");
@@ -1550,13 +1550,153 @@
 //    internal new int GetNumber(int i, int j) => i + j + 15;
 //}
 
+//// 6.P2
+//Vehicle vehicle = new Vehicle();
+//vehicle.ShowCommonFeature();
+//Bus bus = new Bus();
+//bus.ShowSpecialFeature();
+//class Vehicle
+//{
+//    public virtual void ShowCommonFeature()
+//    {
+//        Console.WriteLine("Inside Vehicle.ShowCommonFeature");
+//    }
+//}
+
+//class Bus : Vehicle
+//{
+//    public override void ShowCommonFeature()
+//    {
+//        Console.WriteLine("Inside Bus.ShowCommonFeature");
+//    }
+
+//    public void ShowSpecialFeature()
+//    {
+//        Console.WriteLine("Inside Bus.ShowSpecialFeature");
+//    }
+//}
+
+//// 6.P3
+//Vehicle vehicle = new Bus();
+//vehicle.ShowCommonFeature();
+//class Vehicle
+//{
+//    public virtual void ShowCommonFeature()
+//    {
+//        Console.WriteLine("The basic features are added.");
+//    }
+//}
+//class Bus : Vehicle
+//{
+//    public override void ShowCommonFeature()
+//    {
+//        base.ShowCommonFeature();
+//        Console.WriteLine("The bus-specific features are added.");
+//    }
+//}
+
+//// 6.P4 Abstract Class Case Studies
+//Home home = new CompleteHome();
+//home.ShowStatus();
+//abstract class Home
+//{
+//    public abstract void ShowStatus();
+//}
+//class CompleteHome : Home
+//{
+//    public override void ShowStatus() =>
+//        Console.WriteLine("The home construction is finished.");
+//}
+
+//// 6.P5 Class needs to be abstract to have abstract members
+//abstract class Shape
+//{
+//    public void About()
+//    {
+//        //Some code
+//    }
+//    public void ShowArea()
+//    {
+//        //Some code
+//    }
+//    public abstract void SpecialFetures();
+//}
 
 
+//// 6.P6 Cannot instantiate Shape, only the derived class
+//abstract class Shape
+//{
+//    public void About()
+//    {
+//        // Some code
+//    }
+//    public void ShowArea()
+//    {
+//        // Some code
+//    }
+//}
 
 
+//// 6.P7
+////Shape shape = new Shape(); // Error CS0144
+//abstract class Shape
+//{
+//    public void About()
+//    {
+//        // Some code
+//    }
+//    public void ShowArea()
+//    {
+//        // Some code
+//    }
+//    public abstract void SpecialFeatures();
+//}
 
+//// 6.P8
+//Animal monkey = new Monkey("black");
+//monkey.Run();
+//monkey.Jump();
+//abstract class Animal
+//{
+//    string? color;
+//    public Animal(string color)
+//    {
+//        Console.WriteLine($"Instantiating an animal with {color} color.");
+//    }
 
+//    public void Run()=>
+//        Console.WriteLine("It can run.");
 
+//    public abstract void Jump();
+//}
+
+//class Monkey : Animal
+//{
+//    public Monkey(string color):base(color)=>
+//        Console.WriteLine("It becomes a monkey.");
+
+//    public override void Jump()=>
+//        Console.WriteLine("It can jump.");
+//}
+
+//// 6.P9
+//abstract class Shape
+//{
+//    public abstract void AboutMe();
+//    public abstract void ShowArea();
+//}
+//class Polygon : Shape
+//{
+//    public override void AboutMe() =>
+//        Console.WriteLine("Polygon");
+//    public override void ShowArea() =>
+//        Console.WriteLine("Area");
+//}
+
+// 6.P10 Abstract Class cannot be Sealed
+// 6.P11 Cannot mark constructor with the abstract or sealed modifier
+
+// 6.P12 Interface Case Studies
 
 
 
