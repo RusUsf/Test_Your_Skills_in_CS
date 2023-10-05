@@ -1696,13 +1696,141 @@
 // 6.P10 Abstract Class cannot be Sealed
 // 6.P11 Cannot mark constructor with the abstract or sealed modifier
 
-// 6.P12 Interface Case Studies
+//// 6.P12 Interface Case Studies
+//Console.WriteLine("Interface case studies.");
+//IAnimal animal = new Tiger();
+//animal.Sound();
+//animal = new Dog();
+//animal.Sound();
 
+//interface IAnimal
+//{
+//    void Sound();
+//}
 
+//class Tiger : IAnimal
+//{
+//    public void Sound()
+//    {
+//        Console.WriteLine("Tiger roar.");
+//    }
+//}
 
+//class Dog : IAnimal
+//{
+//    public void Sound()
+//    {
+//        Console.WriteLine("Dog bark.");
+//    }
+//}
 
+//// 6.P13
+//Console.WriteLine("Case study - 6.P13");
+//IAnimal tiger = new CompletedTiger();
+//tiger.Sound();
+//tiger.Run();
 
+//interface IAnimal
+//{
+//    void Sound();
+//    void Run();
+//}
+//abstract class Tiger : IAnimal
+//{
+//    public abstract void Run();
+//    public void Sound() => Console.WriteLine("Tiger roar.");
+//}
 
+//class CompletedTiger : Tiger
+//{
+//    public override void Run()
+//    {
+//        Console.WriteLine("Tiger runs.");
+//    }
+//}
 
+//// 6.P14
+//IAnimal tiger = new BengalTiger();
+//tiger.Sound();
+//tiger.Run();
 
+//interface IAnimal
+//{
+//    void Sound();
+//    void Run();
+//}
 
+//abstract class Tiger : IAnimal
+//{
+//    public abstract void Run();
+//    public void Sound() => Console.WriteLine("Tiger roar.");
+//}
+
+//class BengalTiger : Tiger
+//{
+//    public override void Run() => Console.WriteLine("Bengal tiger run fast.");
+//}
+
+//// 6.P15
+//IElectronicDevice laptop = new IdeaPad33OS();
+//laptop.ShowConfiguration();
+//laptop.DisplayStorage();
+//interface IElectronicDevice
+//{
+//    void DisplayStorage();
+//    void ShowConfiguration();
+//}
+
+//class Laptop
+//{
+//    public virtual void ShowConfiguration()
+//    {
+//        Console.WriteLine("A laptop must have an operating system and ram.");
+//    }
+//}
+//class IdeaPad33OS : Laptop, IElectronicDevice
+//{
+//    public override void ShowConfiguration()
+//    {
+//        base.ShowConfiguration();
+//        Console.WriteLine("An Ideapad33OS supports Windows OS, 4GB ram, and 1TB HDD storage.");
+//    }
+//    public void DisplayStorage() =>
+//        Console.WriteLine("An Ideapad33OS has 1TB HDD storage.");
+//}
+
+// 6.P16 C# has positional notations, parent class positioned first, followed by interface names
+
+//// 6.P17
+//SuperCar car = new();
+//Console.WriteLine("Car details:");
+//Console.WriteLine($"Has an air conditioner? {car.AirConditioner()}");
+//Console.WriteLine($"Number of wheels: {car.ShowNumberOfWheels()}");
+//interface IWheels
+//{
+//    int ShowNumberOfWheels();
+//}
+//interface IACFacility
+//{
+//    bool AirConditioner();
+//}
+//class SuperCar : IACFacility, IWheels
+//{
+//    public bool AirConditioner() => true;
+//    public int ShowNumberOfWheels() => 4;
+//}
+
+//// 6.P18 explicit interface implementation
+//IVehicle car = new Car();
+//car.Describe();
+//interface IVehicle
+//{
+//    void Describe();
+//}
+//class Car : IVehicle
+//{
+//    void IVehicle.Describe()
+//    {
+//        Console.WriteLine("This is a car.");
+//    }
+//}
