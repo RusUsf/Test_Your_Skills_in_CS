@@ -1942,7 +1942,49 @@
 //    }
 //}
 
+// Chapter 7 Encapsulation
 
+//// 7.T5
+//Console.WriteLine("Properties Demo - 1.");
+//Game game = new();
+////game._score = 10;
+//game.Score = 70;
+//Console.WriteLine($"Current score: {game.Score}");
+//class Game
+//{
+//    private int _score;
+//    public int Score
+//    {
+//        get { return _score; }
+//        set { _score = value; }
+//    }
+//}
+
+//// Alternative Code to Create a Property
+
+//class Game
+//{
+//    private int _score;
+//    public int Score
+//    {
+//        get => _score;
+//        set => _score = value;
+//    }
+//}
+
+//Game game = new Game(75);
+//Game game1 = new Game();
+//Game game2 = new Game(135);
+//Console.WriteLine(game.Score);
+//Console.WriteLine(game1.Score);
+//class Game
+//{
+//    public int Score { get; set; } = 60; // default value
+//    public Game(int score = 0)
+//    {
+//        Score = score;
+//    }
+//}
 
 
 
