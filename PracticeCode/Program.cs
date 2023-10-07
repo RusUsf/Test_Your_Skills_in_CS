@@ -1834,3 +1834,123 @@
 //        Console.WriteLine("This is a car.");
 //    }
 //}
+
+//// 6.P19
+//XyzCar car = new();
+//car.Describe();
+//interface IVehicle
+//{
+//    void Describe();
+//}
+//interface ICompany
+//{
+//    void Describe();
+//}
+
+//class XyzCar : IVehicle, ICompany
+//{
+//    public void Describe() =>
+//        Console.WriteLine("This is a car from XYZ company.");
+//}
+
+//// 6.P20
+
+//Console.WriteLine("Experimenting with implicit and explicit interface implementations.");
+//XyzCar car = new();
+//car.Describe();
+//((IVehicle)car).Describe();
+//((ICompany)car).Describe();
+
+//interface IVehicle
+//{
+//    void Describe();
+//}
+//interface ICompany
+//{
+//    void Describe();
+//}
+//class XyzCar : IVehicle, ICompany
+//{
+//    public void Describe() =>
+//        Console.WriteLine("This is a car from XYZ company.");
+
+//    void IVehicle.Describe() => Console.WriteLine("Implementing IVehicle.Describe().");
+
+//    void ICompany.Describe() => Console.WriteLine("Implementing ICompany.Describe().");
+//}
+
+//// 6.P.21
+//Console.WriteLine("Experimenting with a default inteface method");
+//IVehicle vehicle = new Car();
+//vehicle.Describe();
+//interface IVehicle
+//{
+//    internal void Describe()=>
+//        Console.WriteLine("The XYZ company makes this car.");
+//}
+//class Car : IVehicle
+//{
+//}
+
+//// 6.P.22
+//Car car = new();
+//car.Describe();
+//((IVehicle)car).Describe();
+//interface IVehicle
+//{
+//    internal void Describe() =>
+//        Console.WriteLine("The XYZ company makes this car");
+//}
+//class Car : IVehicle
+//{
+//    internal void Describe()
+//    {
+//        Console.WriteLine("Overriding the default interface method.");
+//    }
+//    void IVehicle.Describe()
+//    {
+//        Console.WriteLine("Explicitly overriding the default interface method.");
+//    }
+//}
+
+// 6.P23 Interface cannot inherit from the class
+// 6.P24 Interface cannot contain instance fields
+//// 6.P25
+//Console.WriteLine("Can a tag an interface method with the abstract keyword?");
+//SomeClass myClass = new SomeClass();
+//myClass.Show();
+//((ISomeInteface)myClass).Show();
+//interface ISomeInteface
+//{
+//    abstract void Show();
+//}
+
+//class SomeClass : ISomeInteface
+//{
+//    public void Show() => Console.WriteLine("Show method implemintation");
+//    void ISomeInteface.Show() =>
+//        Console.WriteLine("Implementing show method.");
+//}
+
+//// 6.P26
+//Console.WriteLine("Can an interface contain a class?");
+//public interface ISample
+//{
+//    public class SomeClass
+//    {
+
+//    }
+//}
+
+
+
+
+
+
+
+
+
+
+
+
+
