@@ -1986,6 +1986,187 @@
 //    }
 //}
 
+//// 7.T10 How can I create an indexer in C#?
+//Console.WriteLine("***Indexer Demo***");
+//Animals animals = new();
+//Console.WriteLine("Here are the animals:");
+//Console.WriteLine(animals[0]);
+//Console.WriteLine(animals[1]);
+
+//// Updating the animal type at index 0
+//animals[0] = "Cat";
+
+//Console.WriteLine("The updated list of the animals:");
+//Console.WriteLine(animals[0]);
+//Console.WriteLine(animals[1]);
+
+//class Animals
+//{
+//    private string[] _names;
+//    public Animals()
+//    {
+//        _names = new string[] { "Tiger", "Lion" };
+//    }
+
+//    public string this[int index]
+//    {
+//        get
+//        {
+//            string temp = String.Empty;
+//            if (index >= 0 && index < _names.Length)
+//            {
+//                temp = _names[index];
+//            }
+//            else
+//            {
+//                // You can throw an error
+//            }
+
+//            return temp;
+//        }
+//        set
+//        {
+//            if (index >= 0 && index < _names.Length)
+//            {
+//                _names[index] = value;
+//            }
+//            else
+//            {
+//                // You can throw an error
+//            }
+//        }
+//    }
+//}
+
+//// Chapter 7 Programming Skills
+//// 7.P1
+//Console.WriteLine("Experimenting properties in C#.");
+//Game game = new();
+//Console.WriteLine($"Current level: {game.Level}");
+//game.Level = 2;
+//Console.WriteLine($"Current level: {game.Level}");
+//class Game
+//{
+//    private int _level;
+//    public Game() { _level = 1; }
+//    public int Level
+//    {
+//        get => _level;
+//        set => _level = value;
+//    }
+//}
+
+//// 7.P2
+//Console.WriteLine("Experimenting properties in C#");
+//Game game = new();
+//game.Level = 2;
+//class Game
+//{
+//    private int level;
+//    public int Level
+//    {
+//        get => level;
+//        set => level = value;
+//    }
+//}
+
+//// 7.P3
+//Game game = new();
+//Console.WriteLine($"Current level: {game.Level}");
+//game.Level = 2;
+//Console.WriteLine($"Current level: {game.Level}");
+//game.Level = 3;
+//Console.WriteLine($"Current level: {game.Level}");
+//class Game
+//{
+//    private int level = 1;
+//    public int Level
+//    {
+//        get => level;
+//        set
+//        {
+//            if (value < 0 || value > 2)
+//            {
+//                level = 0;
+//            }
+//            else { level = value; }
+//        }
+//    }
+//}
+
+////7.P4
+//Game game = new();
+//Console.WriteLine($"The current level: {game.Level}");
+//game.Level = 3;
+//Console.WriteLine($"The current level: {game.Level}");
+
+//class Game
+//{
+//    public int Level
+//    {
+//        get; set;
+//    } = 2;
+//}
+
+// 7.P5 Virtual and Abstract Properties
+Console.WriteLine("Experimenting with a virtual property in C#");
+Shape shape = new();
+Console.WriteLine($"The area of the {shape} is {shape.Area} square units.");
+shape = new Circle(10);
+Console.WriteLine($"The area of the {shape} is {shape.Area} square units.");
+class Shape
+{
+    public virtual double Area
+    {
+        get => 0;
+    }
+    public override string ToString()
+    {
+        return "unknown shape";
+    }
+}
+class Circle : Shape
+{
+    readonly int _radius;
+    public Circle(int radius)
+    {
+        this._radius = radius;
+    }   
+    public int Radius
+    {
+        get => _radius;
+    }
+    public override double Area
+    {
+        get => 3.14 * _radius * _radius;
+    }
+    public override string ToString()
+    {
+        return "cirle";
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
