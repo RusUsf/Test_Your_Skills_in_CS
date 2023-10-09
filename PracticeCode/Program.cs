@@ -2222,6 +2222,164 @@
 //    }
 //}
 
+//// 7.P10
+//Game game = new();
+//Console.WriteLine($"Game name: {game.Name}");
+//class Game
+//{
+//    public string Name { get; init; } = "Super Game";
+//}
+
+//// 7.P11 Using Indexers
+//Console.WriteLine("***Indexer Demo***");
+//Animals animals = new();
+//Console.WriteLine("Here are the animals:");
+//Console.WriteLine(animals[0]);
+//Console.WriteLine(animals[1]);
+//class Animals
+//{
+//    private string[] _names;
+//    public Animals()
+//    {
+//        _names = new string[] { "Tiger", "Lion" };
+//    }
+//    public string this[int index]
+//    {
+//        get => _names[index];
+//        set => _names[index] = value;
+//    }
+//}
+
+// 7.P12 When dealing with indexed values - use proper validations!!!
+
+//// 7.P13 Properties and Indexers in Interfaces
+//Console.WriteLine("Case studies with the interfaces.");
+//IEmployee emp = new Employee("Sam", 1);
+//Console.WriteLine($"Name: {emp.Name}, ID:{emp.Id}");
+
+//interface IEmployee
+//{
+//    public string Name { get; set; }
+//    public int Id { get; set; }
+//}
+//class Employee : IEmployee
+//{
+//    string _name;
+//    int _id;
+//    public Employee(string name, int Id)
+//    {
+//        this._name = name;
+//        this._id = Id;
+//    }
+//    public string Name
+//    {
+//        get => _name;
+//        set=> _name = value;
+//    }
+//    public int Id
+//    {
+//        get => _id;
+//        set=>_id = value;
+//    }
+//}
+
+//// 7.P14
+//Console.WriteLine("Case studies with interfaces");
+//IEmployee emp = new Employee("Kate", 2);
+//Console.WriteLine($"Name: {emp.Name}, ID:{emp.Id}");
+//interface IEmployee
+//{
+//    public string Name { get; set; }
+//    public int Id { get; set; }
+//}
+
+//class Employee : IEmployee
+//{
+//    string _name;
+//    int _id;
+//    public Employee(string name, int Id)
+//    {
+//        this._name = name;
+//        this._id = Id;
+//    }
+
+//    string IEmployee.Name
+//    {
+//        get => _name;
+//        set=> _name = value;
+//    }
+//    int IEmployee.Id
+//    {
+//        get=> _id;
+//        set=> _id = value;
+//    }
+//}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
