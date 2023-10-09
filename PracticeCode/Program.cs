@@ -2108,48 +2108,119 @@
 //    } = 2;
 //}
 
-// 7.P5 Virtual and Abstract Properties
-Console.WriteLine("Experimenting with a virtual property in C#");
-Shape shape = new();
-Console.WriteLine($"The area of the {shape} is {shape.Area} square units.");
-shape = new Circle(10);
-Console.WriteLine($"The area of the {shape} is {shape.Area} square units.");
-class Shape
-{
-    public virtual double Area
-    {
-        get => 0;
-    }
-    public override string ToString()
-    {
-        return "unknown shape";
-    }
-}
-class Circle : Shape
-{
-    readonly int _radius;
-    public Circle(int radius)
-    {
-        this._radius = radius;
-    }   
-    public int Radius
-    {
-        get => _radius;
-    }
-    public override double Area
-    {
-        get => 3.14 * _radius * _radius;
-    }
-    public override string ToString()
-    {
-        return "cirle";
-    }
-}
+//// 7.P5 Virtual and Abstract Properties
+//Console.WriteLine("Experimenting with a virtual property in C#");
+//Shape shape = new();
+//Console.WriteLine($"The area of the {shape} is {shape.Area} square units.");
+//shape = new Circle(10);
+//Console.WriteLine($"The area of the {shape} is {shape.Area} square units.");
+//Circle circle = new Circle(10);
+//Console.WriteLine($"The area of the {shape} is {circle.Area}");
+//class Shape
+//{
+//    public virtual double Area
+//    {
+//        get => 0;
+//    }
+//    public override string ToString()
+//    {
+//        return "unknown shape";
+//    }
+//}
+//class Circle : Shape
+//{
+//    readonly int _radius;
+//    public Circle(int radius)
+//    {
+//        this._radius = radius;
+//    }   
+//    public int Radius
+//    {
+//        get => _radius;
+//    }
+//    public override double Area
+//    {
+//        get => 3.14 * _radius * _radius;
+//    }
+//    public override string ToString()
+//    {
+//        return "cirle";
+//    }
+//}
+
+//// 7.P6
+//Console.WriteLine("Experimenting with an abstract property in C#");
+//Shape shape = new Rectangle();
+//Console.WriteLine($"The area of the {shape} is {shape.Area} square units");
+//abstract class Shape
+//{
+//    public abstract double Area { get; }
+//    public override string ToString()
+//    {
+//        return "unknown shape";
+//    }
+//}
+//class Rectangle : Shape
+//{
+//    public override double Area
+//    {
+//        get => 100;
+//    }
+//    public override string ToString()
+//    {
+//        return "rectangle";
+//    }
+//}
+
+//// 7.P7 The Usage of the init Keyword
+//Console.WriteLine("Experimenting with the 'init' keyword.");
+//Game game = new() { Name="NewGame"};
+////game.Name = "NewGame";
+//Console.WriteLine($"Game name: {game.Name}");
+//class Game
+//{
+//    private string _name;
+//    public Game() { _name = "SuperGame"; }
+//    public string Name
+//    {
+//        get => _name;
+
+//        init => _name = value;
+//    }
+//}
+
+//Game game = new Game("NewGame");
+//Console.WriteLine($"The game name value is {game.Name}");
+//game.Name = "Test";
+//Console.WriteLine($"The new game value is {game.Name}");
+//game = new Game();
+//Console.WriteLine($"The new game value is {game.Name}");
+//class Game
+//{
+//    public string Name { get; set; }
+
+//    public Game(string name="Game")
+//    {
+//        Name = name;
+//    }
+//}
 
 
-
-
-
+//// 7.P9
+//Game game = new();
+//Console.WriteLine($"The game name: {game.Name}");
+//game = new() { Name = "Airplane Simulator" };
+//Console.WriteLine($"The new game name: {game.Name}");
+//class Game
+//{
+//    private string _name;
+//    public Game() { _name = "Car Simulator"; }
+//    public string Name
+//    {
+//        get => _name;
+//        init => _name = value;
+//    }
+//}
 
 
 
