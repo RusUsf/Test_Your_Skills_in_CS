@@ -2315,10 +2315,201 @@
 //    }
 //}
 
+//// 7.P15
+//Console.WriteLine("Case studies with the interfaces.");
+//IEmployee emp = new EmployeeStore();
 
+//// Picking the employee name from the ID
+//Console.WriteLine($"The name of the emp[0] is {emp[0]}");
+//Console.WriteLine($"The name of the emp[1] is {emp[1]}");
+//Console.WriteLine($"The name of the emp[2] is {emp[2]}");
 
+//Console.WriteLine("******************");
 
+//// Picking the employee ID from the name
+//Console.WriteLine($"The ID of Sam is {emp["Sam"]}");
+//Console.WriteLine($"The ID of Kate is {emp["Kate"]}");
+//Console.WriteLine($"The ID of Jack is {emp["Jack"]}");
 
+//class Employee
+//{
+//    string _name;
+//    int _id;
+//    public Employee(string name, int Id)
+//    {
+//        this._name = name;
+//        this._id = Id;
+//    }
+
+//    public int EmployeeId
+//    {
+//        get => _id;
+//    }
+
+//    public string Name
+//    {
+//        get => _name;
+//    }
+//}
+
+//interface IEmployee
+//{
+//    public string this[int id] { get; }
+//    public int this[string name] { get; }
+//}
+
+//class EmployeeStore : IEmployee
+//{
+//    Employee[] employees;
+//    public EmployeeStore()
+//    {
+//        employees = new Employee[]
+//        {
+//            new Employee("Sam",1),
+//            new Employee("Kate",2),
+//            new Employee("Jack",3),
+//        };
+//    }
+
+//    public string this[int id]
+//    {
+//        get => employees[id].Name;
+//    }
+//    public int this[string name]
+//    {
+//        get
+//        {
+//            int temp = 0;
+//            if (name.Equals("Sam")) temp = employees[0].EmployeeId;
+//            if (name.Equals("Kate")) temp = employees[1].EmployeeId;
+//            if (name.Equals("Jack")) temp = employees[2].EmployeeId;
+//            return temp;
+//        }
+//    }
+//}
+
+//// 7.P15 Simplified and experimenting with handling special values strategies
+///*
+// 1.Set accesors are not mandatory
+// 2. indexers can be int or string or any custom type
+// 3. indexers can be overloaded
+// 4. not-high quality - suseptable to IndexOutOfRangeException
+// */
+
+//Console.WriteLine("Case studies with the interfaces.");
+//IEmployee emp = new EmployeeStore();
+
+//// Picking the employee name from the ID
+//Console.WriteLine($"The name of the emp[0] is {emp[0]}");
+//Console.WriteLine($"The name of the emp[1] is {emp[1]}");
+//Console.WriteLine($"The name of the emp[2] is {emp[3]}");
+
+//Console.WriteLine("******************");
+
+//// Picking the employee ID from the name
+//Console.WriteLine($"The ID of Sam is {emp["Sam"]}");
+//Console.WriteLine($"The ID of Kate is {emp["Kate"]}");
+//Console.WriteLine($"The ID of Jack is {emp["Jackk"]}");
+
+//class Employee
+//{
+//    public int EmployeeId;
+//    public string Name;
+//    public Employee(string name, int id)
+//    {
+//        EmployeeId = id;
+//        Name = name;
+//    }
+//}
+//interface IEmployee
+//{
+//    public string this[int id] { get; }
+//    public int this[string name] { get; }
+//}
+//class EmployeeStore : IEmployee
+//{
+//    Employee[] employees;
+//    public EmployeeStore()
+//    {
+//        employees = new Employee[]
+//        {
+//            new Employee("Sam",1),
+//            new Employee("Kate",2),
+//            new Employee("Jack",3),
+//        };
+//    }
+//    public string this[int id]
+//    {
+//        get
+//        {
+//            if (id >= 0 && id < employees.Length)
+//                return employees[id].Name;
+//            else
+//                return null;
+//        }
+//    }
+//    public int this[string name]
+//    {
+//        get
+//        {
+//            foreach (var e in employees)
+//            {
+//                if (e.Name.Equals(name, StringComparison.OrdinalIgnoreCase))
+//                    return e.EmployeeId;
+//            }
+//            return -1;
+//        }
+//    }
+//}
+
+//// 7.P16 Bonus - Indexer with multiple parameters
+
+//Console.WriteLine("***Indexers with multiple parameters.***");
+//IEmployee emp = new EmployeeStore();
+
+//// Picking the employee ID from the name
+//Console.WriteLine($"Does the employee Sam with ID 1 exist? {emp["Sam",1]}");
+//Console.WriteLine($"Does the employee Kate with ID 2 exist? {emp["Kate",2]}");
+//Console.WriteLine($"Does the employee Jack with ID 3 exist? {emp["Jack",3]}");
+//class Employee
+//{
+//    string _name;
+//    int _id;
+//    public Employee(string name, int Id)
+//    {
+//        this._name = name;
+//        this._id = Id;
+//    }
+//}
+//interface IEmployee
+//{
+//    public bool this[string name, int id] { get; }
+//}
+//class EmployeeStore : IEmployee
+//{
+//    Employee[] employees;
+//    public EmployeeStore()
+//    {
+//        employees = new Employee[]
+//        {
+//            new Employee("Sam",1),
+//            new Employee("Kate",2),
+//            new Employee("Jack",3)
+//        };
+//    }
+
+//    public bool this[string name, int id]
+//    {
+//        get
+//        {
+//            bool temp = false;
+//            if (name.Equals("Sam") && id == 1) temp = true;
+//            if (name.Equals("Kate") && id == 2) temp = true;
+//            if (name.Equals("Jack") && id == 3) temp = true;
+//            return temp;
+//        }
+//    }
+//}
 
 
 
