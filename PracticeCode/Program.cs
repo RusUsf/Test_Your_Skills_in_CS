@@ -2603,18 +2603,71 @@
 //    public SmallDivisorException(string msg, Exception inner) : base(msg, inner) { }
 //}
 
+////8.P1
+//Console.WriteLine("***Case study on exception handling.***");
+//int a = 10, b = 0;
+//try
+//{
+//    int c = a / b;
+//    Console.WriteLine($"The a=10,b=0. So, a/b is: {c}");
+//}
+//catch (Exception ex)
+//{
+//    Console.WriteLine($"Encoutnered: {ex.Message}");
+//}
+//finally
+//{
+//    Console.WriteLine("Inside the finally block: you cannot skip me!");
+//}
 
+//// 8.P2
+//Console.WriteLine("***Case study multiple catch blocks.***");
+//try
+//{
+//    Console.WriteLine("Enter an integer:");
+//    string input = Console.ReadLine();
+//    int number = Convert.ToInt32(input);
+//    Console.WriteLine($"You have entered the number: {number}");
+//}
+//catch (FormatException ex)
+//{
+//    Console.WriteLine("You need to enter an integer.");
+//    Console.WriteLine($"The exception detail: {ex.StackTrace}");
+//}
+//catch(OverflowException ex)
+//{
+//    Console.WriteLine("You need to provide smaller number");
+//    Console.WriteLine($"The exception detail: {ex.StackTrace}");
+//}
+//catch (Exception ex)
+//{
+//    Console.WriteLine($"Encountered an unkown error.");
+//    Console.WriteLine($"The exception detail: {ex.StackTrace}");
+//}
+//finally
+//{
+//    Console.WriteLine("Thank you for testing this scenario.");
+//}
 
-
-
-
-
-
-
-
-
-
-
+//// 8.P3
+//Console.WriteLine("***Case study with multiple catch blocks***");
+//int a = 100, b = 0;
+//try
+//{
+//    Console.WriteLine($"The result of a/b is: {a/b}");
+//}
+//catch (DivideByZeroException ex)
+//{
+//    Console.WriteLine("Encountered the DivideByZeroException");
+//}
+//catch (ArithmeticException ex)
+//{
+//    Console.WriteLine("Encountered the ArithmeticException");
+//}
+//finally
+//{
+//    Console.WriteLine("Foster sence of curiosity!");
+//}
 
 
 
