@@ -2389,7 +2389,6 @@
 //}
 
 //// 7.P15 Simplified and experimenting with handling special values strategies
-///*
 // 1.Set accesors are not mandatory
 // 2. indexers can be int or string or any custom type
 // 3. indexers can be overloaded
@@ -2526,6 +2525,82 @@
 //    {
 //        get => length * breadth;
 //    }
+//}
+
+// Chapter 8 Handling Exceptions
+
+//// Multiple catch blocks 
+//Console.WriteLine("***Case study with multiple catch blocks***");
+
+//try
+//{
+//    // Some Code
+//    throw new IndexOutOfRangeException("Index is out of range.");
+//}
+//catch (DivideByZeroException ex)
+//{
+//    // Some Code
+//}
+//catch (ArithmeticException ex)
+//{
+//    // Some Code
+//}
+//catch (Exception ex) when (ex.Message.Contains("Timeout"))
+//{
+//    Console.WriteLine($"Caught:" +ex.Message);
+//    // Some Code
+//}
+//finally
+//{
+//    Console.WriteLine("Codign Pro-Tip: Read, Do, Read, Do, Read, Do!");
+//    // Some Code
+//}
+
+//// Exception Filters
+//using System.Net;
+/////*
+//try
+//{
+//   // Some code that can raise a WebException
+//}
+//catch(WebException ex) when(ex.Status == WebExceptionStatus.Timeout)
+//{
+//    // some code
+//}
+//catch(WebException ex) when(ex.Status == WebExceptionStatus.ProtocolError)
+//{
+//    // some code
+//}
+
+//// 8.T10 Custom Exception
+//Console.WriteLine("***Custom Exception Example***");
+//int a = 10, b = 2, result;
+//try
+//{
+//    b--;
+//    if (b == 1)
+//    {
+//        throw new SmallDivisorException($"The divisor becomes {b}");
+
+//        //throw new SmallDivisorException();
+//    }
+//    result = a / b;
+//    Console.WriteLine($"The result of {a} / {b} = {result}");
+//}
+//catch (SmallDivisorException ex)
+//{
+//    Console.WriteLine($"Cautght the custom exception: {ex.Message}");
+//}
+//finally
+//{
+//    Console.WriteLine("\nThank you!");
+//}
+
+//class SmallDivisorException : Exception
+//{
+//    public SmallDivisorException() { }
+//    public SmallDivisorException(string msg) : base(msg) { }
+//    public SmallDivisorException(string msg, Exception inner) : base(msg, inner) { }
 //}
 
 
