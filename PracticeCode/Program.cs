@@ -2669,10 +2669,35 @@
 //    Console.WriteLine("Foster sence of curiosity!");
 //}
 
+//// 8.P4 General Catch Block
+//int a = 100, b = 0;
+//try
+//{
+//    Console.WriteLine($"The result of a/b is: {a / b}");
+//}
+//catch(Exception ex)
+//{
+//    Console.WriteLine($"The exception caught: {ex.Message}");
+//}
+//catch
+//{
+//    Console.WriteLine("Caught a non-CLS exceptions.");
+//}
 
+// 8.P5 Cannot place General Catch block before other specific Catch blocks
 
+//// 8.P6 Throwing and Rethrowing an Exception
+//Console.WriteLine("***The case study on the throw statement.***");
 
-
+//try
+//{
+//    // Some Code before
+//    throw new IndexOutOfRangeException("Index is out of range.");
+//}
+//catch(Exception ex)
+//{
+//    Console.WriteLine($"The exception caught: {ex.Message}");
+//}
 
 
 
