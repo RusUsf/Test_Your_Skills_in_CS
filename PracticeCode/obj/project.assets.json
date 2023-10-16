@@ -8,26 +8,27 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Lenovo\\.nuget\\packages\\": {}
+    "C:\\Users\\rduba\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Lenovo\\Desktop\\Git_Repos\\test_your_skills_in_cs\\PracticeCode\\PracticeCode.csproj",
+      "projectUniqueName": "C:\\MyFiles_RuslanDubas\\Textbooks\\More\\CSharp\\Test_Your_Skills_in_CS\\PracticeCode\\PracticeCode.csproj",
       "projectName": "PracticeCode",
-      "projectPath": "C:\\Users\\Lenovo\\Desktop\\Git_Repos\\test_your_skills_in_cs\\PracticeCode\\PracticeCode.csproj",
-      "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Lenovo\\Desktop\\Git_Repos\\test_your_skills_in_cs\\PracticeCode\\obj\\",
+      "projectPath": "C:\\MyFiles_RuslanDubas\\Textbooks\\More\\CSharp\\Test_Your_Skills_in_CS\\PracticeCode\\PracticeCode.csproj",
+      "packagesPath": "C:\\Users\\rduba\\.nuget\\packages\\",
+      "outputPath": "C:\\MyFiles_RuslanDubas\\Textbooks\\More\\CSharp\\Test_Your_Skills_in_CS\\PracticeCode\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\rduba\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
@@ -60,7 +61,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-rc.2.23502.2/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-preview.1.23115.2\\RuntimeIdentifierGraph.json"
       }
     }
   }
