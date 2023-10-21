@@ -2810,7 +2810,36 @@
 //    Console.WriteLine($"Cought:" + ex.Message);
 //}
 
+//// Chapter 9 - Usefull Concepts
+//// 9.T1
+//int a = 1;
+//double b = a;
 
+//// 9.T3
+//// static class Rectangle
+
+//Rectangle.CalculateArea();
+//static class Rectangle
+//{
+//    readonly static int _flag = 20;
+//    public static void CalculateArea()
+//    {
+//        Console.WriteLine("The area is shown.");
+//    }
+//}
+
+//// 9.T5
+//double flag = -625.0;
+//Console.WriteLine(Math.Abs(flag));
+//Console.WriteLine(Math.Sqrt(-flag));
+
+//// 9.T15
+//Console.WriteLine(new Sample()._flag2);
+//Console.WriteLine(new Sample()._flag2);
+//class Sample
+//{
+//    public readonly int _flag2 = new Random().Next(500);
+//}
 
 
 
