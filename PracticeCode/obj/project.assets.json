@@ -8,23 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\rus_d\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\rduba\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\rus_d\\OneDrive\\Desktop\\Coding\\Laptop\\CSharp\\Test_Your_Skills_in_CS\\PracticeCode\\PracticeCode.csproj",
+      "projectUniqueName": "C:\\MyFiles_RuslanDubas\\Textbooks\\More\\CSharp\\Test_Your_Skills_in_CS\\PracticeCode\\PracticeCode.csproj",
       "projectName": "PracticeCode",
-      "projectPath": "C:\\Users\\rus_d\\OneDrive\\Desktop\\Coding\\Laptop\\CSharp\\Test_Your_Skills_in_CS\\PracticeCode\\PracticeCode.csproj",
-      "packagesPath": "C:\\Users\\rus_d\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\rus_d\\OneDrive\\Desktop\\Coding\\Laptop\\CSharp\\Test_Your_Skills_in_CS\\PracticeCode\\obj\\",
+      "projectPath": "C:\\MyFiles_RuslanDubas\\Textbooks\\More\\CSharp\\Test_Your_Skills_in_CS\\PracticeCode\\PracticeCode.csproj",
+      "packagesPath": "C:\\Users\\rduba\\.nuget\\packages\\",
+      "outputPath": "C:\\MyFiles_RuslanDubas\\Textbooks\\More\\CSharp\\Test_Your_Skills_in_CS\\PracticeCode\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\rus_d\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\rduba\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

@@ -2842,15 +2842,69 @@
 //}
 
 
+//// 9.P1 Programming Skills
+//using System.Drawing;
+
+//double length = 15.5;
+//double breadth = 7;
+//double area = Rectangle.GetArea(length, breadth);
+
+//Console.WriteLine($"The rectangle's area is {area} square units");
+
+//class Rectangle
+//{
+//    public static double GetArea(double len, double bre)
+//    {
+//        return len * bre;
+//    }
+//}
+
+// 9.P2 Cannot instantiate a static class
+//Console cons = new Console();
+
+//// 9.P3
+//Rectangle.CalculateArea();
+
+//Rectangle flag1 = new();
+//flag1.DisplaySomehtingElse();
+//class Rectangle
+//{
+//    public static void CalculateArea()
+//    {
+//        Console.WriteLine("The area is shown.");
+//    }
+//    public void DisplaySomehtingElse()
+//    {
+//        Console.WriteLine("Display something (except area).");
+//    }
+//}
+
+//// 9.P4 
+//class Rectangle
+//{
+//    static readonly int _flag = 20;
+
+//    public static void DisplayFlag()
+//    {
+//        Console.WriteLine($"Flag1 is {_flag}");
+//    }
+//}
 
 
+//// 9.P5 Using Extension Methods
+//using Extensions;
 
+//int flag1 = 15;
+//int flag2 = flag1.IncrementByFive();
+//Console.WriteLine($"flag2 is {flag2}");
 
-
-
-
-
-
+//namespace Extensions
+//{
+//    public static class IntExtension
+//    {
+//        public static int IncrementByFive(this int i) => i + 5;
+//    }
+//}
 
 
 
