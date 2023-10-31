@@ -2906,10 +2906,71 @@
 //    }
 //}
 
+//// 9.P6
+//using Extensitioins;
+//Sample sample = new();
+//sample.DisplayNumber();
+//sample.DisplayString();
 
 
+//public class Sample
+//{
+//    public int _flag = 10;
+//    public void DisplayNumber()
+//    {
+//        Console.WriteLine(_flag);
+//    }
+//}
 
+//namespace Extensitioins
+//{
+//    public static class SampleExtension
+//    {
+//        public static void DisplayString(this Sample s)
+//        {
+//            Console.WriteLine(s.ToString());
+//            Console.WriteLine(s._flag);
+//        }
+//    }
+//}
 
+//// 9.P8
+//using Extensions;
+//Sample sample = new();
+//sample.Display();
+//public class Sample
+//{
+//    public void Display()
+//    {
+//        Console.WriteLine("The instance method is called.");
+//    }
+//}
+
+//namespace Extensions
+//{
+//    public static class SampleExtension
+//    {
+//        public static void Display(this Sample s)
+//        {
+
+//            Console.WriteLine("The extension method is called");
+//        }
+//    }
+//}
+
+//// 9.P9 Passing by Value-Type by Value
+//Console.WriteLine("Passing a value type by value.");
+//int flag = 50;
+//Sample.Change(flag);
+//Console.WriteLine($"The final value is {flag}");
+//class Sample
+//{
+//    internal static void Change(int x)
+//    {
+//        x *= 2;
+//        Console.WriteLine($"Inside Change(), the value is {x}");
+//    }
+//}
 
 
 
