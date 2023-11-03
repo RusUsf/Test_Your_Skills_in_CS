@@ -2972,8 +2972,70 @@
 //    }
 //}
 
+//// 9.P10 Passing the Value-Type by Reference
+//int flag = 50;
+//Sample.Change(ref flag);
+//Console.WriteLine($"The final value is {flag}");
 
+//class Sample
+//{
+//    internal static void Change(ref int x)
+//    {
+//        x *= 2;
+//        Console.WriteLine($"Inside Change(),the value is {x}");
+//    }
+//}
 
+//// 9.P11
+//int flag;
+//Sample.Change(out flag);
+//Console.WriteLine($"The final value is {flag}");
+//class Sample
+//{
+//    internal static void Change(out int x)
+//    {
+//        x = 100;
+//        Console.WriteLine($"Inside the Change(), the value is {x}");
+//    }
+//}
+
+//// 9.P12 Using the is Operator
+//Circle circle = new();
+//Rectangle rectangle = new();
+//Console.WriteLine($"Is the circle a special type of shape?{circle is Shape}");
+//Console.WriteLine($"Is the cirle a special type of rectangle?{circle is Rectangle}");
+
+//class Shape { }
+//class Circle :Shape { }
+//class Rectangle : Shape { }
+
+//// 9.P13
+//double i = 60.5;
+//object iBoxed = i;
+//double? jNullable = 40.2;
+//if(iBoxed is double a &&  jNullable is double b)
+//{
+//    Console.WriteLine($"Result is {a+b}");
+//}
+
+//// 9.P14 Using as Operator
+//Shape shape = new();
+//Circle circle = new();
+//Shape? convertedShape = circle as Shape;
+//Console.WriteLine($"The conversion 'circle as Shape' proudces {convertedShape}");
+//Circle? convertedCircle = shape as Circle;
+//if (convertedCircle == null)
+//{
+//    Console.WriteLine($"The conversion 'shape as Circle' produces null.");
+//}
+//else
+//{
+//    Console.WriteLine($"The conversion 'shape as Circle' produces {convertedCircle}");
+//}
+//class Shape { }
+//class Circle :Shape { }
+
+// 9.P16 A Method That Returns Multiple Values
 
 
 
