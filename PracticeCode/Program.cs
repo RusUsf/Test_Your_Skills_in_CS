@@ -3035,8 +3035,41 @@
 //class Shape { }
 //class Circle :Shape { }
 
-// 9.P16 A Method That Returns Multiple Values
+//// 9.P16 A Method That Returns Multiple Values
+//Console.WriteLine("Testing a method that returns multiple values");
+//double radius = 10.0;
+//double area, perimeter;
+//string description = string.Empty;
+//Sample.UpdateDetails(radius, out area, out perimeter, out description);
+//Console.WriteLine($"The area of the circle is {area} sq.units.");
+//Console.WriteLine($"The perimeter of the circle is {perimeter} units.");
+//Console.WriteLine($"Description: it is a {description}");
 
+//class Sample
+//{
+//    public static void UpdateDetails(double x, out double area, out double peri, out string desc)
+//    {
+//        area = 3.14 * x * x;
+//        peri = 2 * 3.14 * x;
+//        desc = "filled";
+//    }
+//}
+
+//// 9.P17 Comparing the const and readonly Keywords
+//new Sample().Display();
+//class Sample
+//{
+//    private static readonly int s_flag = 1;
+//    static Sample()
+//    {
+//        s_flag = 25;
+//    }
+//    public void Display()
+//    {
+//        Console.WriteLine($"Flag is {s_flag}");
+//    }
+
+//}
 
 
 
