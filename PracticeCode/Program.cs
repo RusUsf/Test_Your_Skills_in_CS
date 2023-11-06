@@ -3132,6 +3132,18 @@
 //}
 
 
+//// 10.T9 Func & Action Delegates
+//Func<double, double, int> del = Sample.ApproximateTotal;
+//Console.WriteLine($"Approximate, the sum of {10.5} and {20.7} is :{del(10.5,20.7)}");
+//class Sample
+//{
+//    public static int ApproximateTotal(double a, double b)
+//    {
+//        double temp = a + b;
+//        return (int)temp;
+//    }
+//}
+
 
 
 
