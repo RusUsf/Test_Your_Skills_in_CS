@@ -3108,7 +3108,28 @@
 //    public delegate int Calculate(int x, int y);
 //}
 
-// 10.T2 - Multicast Delegate
+//// 10.T2 - Multicast Delegate
+
+//Program_10_T2.MultiDel del = Program_10_T2.Sample.DisplaySum;
+//del += Program_10_T2.Sample.DisplayDifference;
+//del += Program_10_T2.Sample.DisplayProduct;
+//del(90, 10);
+
+//namespace Program_10_T2
+//{
+//    public delegate void MultiDel(int x, int y);
+//    class Sample
+//    {
+//        public static void DisplaySum(int a, int b) =>
+//            Console.WriteLine($"Sum = {a + b}");
+
+//        public static void DisplayDifference(int a, int b) =>
+//            Console.WriteLine($"Difference = {a - b}");
+
+//        public static void DisplayProduct(int a, int b) =>
+//            Console.WriteLine($"Product = {a*b}");
+//    }
+//}
 
 
 
