@@ -3071,8 +3071,44 @@
 
 //}
 
+// Chapter 10 - Delegates
+//// 10.T1
+//using Program_10_T1;
+
+//int a = 25, b = 75;
+//static int Sum(int a, int b)
+//{
+//    return a + b;
+//}
+
+//// Case -1
+//Console.WriteLine("Called the Sum method without using a delegate.");
+//Console.WriteLine($"a+b = {Sum(a,b)}");
+
+//// Case -2
+//Program_10_T1.Calculate del = new Program_10_T1.Calculate(Sum);
+
+////Program_10_T1.Calculate del = new(Sum);
+////Program_10_T1.Calculate del = Sum;
+
+//Console.WriteLine("Called the Sum method using a delegate.");
+//Console.WriteLine($"a+b = {del(a,b)}");
+
+//// del(a, b) is shorthand for del.Invoke(a,b)
+//Console.WriteLine("Called the Sum method using a delegate.  Used the Invoke method directly");
+//Console.WriteLine($"a+b = {del.Invoke(a,b)}");
+
+//Calculate delegateExample = new Calculate(Sum); // Using full syntax
+//Calculate delegateExample2 = new(Sum);          // Using simplified new expression
+//Calculate calculateExample3 = Sum;              // Condensed Syntax
 
 
+//namespace Program_10_T1
+//{
+//    public delegate int Calculate(int x, int y);
+//}
+
+// 10.T2 - Multicast Delegate
 
 
 
