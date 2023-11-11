@@ -3177,12 +3177,170 @@
 //    public int AddFive(int a, int b) { return a + b + 5; }
 //}
 
+//// 10.P2
+//using System.Runtime.InteropServices;
+//CustomDelegate.MyDel del = Sample.Sum;
+//Console.WriteLine($"The sum of {10} and {20} is: {del(10,20)}");
+//namespace CustomDelegate
+//{
+//    public delegate int MyDel(int x, int y);
+//}
+//class Sample
+//{
+//    public static int Sum(int a, int b)
+//    {
+//        Console.WriteLine("The Sum method of the Sample class is invoked.");
+//        return a + b;
+//    }
+//}
 
+//// 10.P3 Class cannot inherit from a delegate
 
+//// 10.P4 Multicast Delegates
+//Program_10_P4.MultiDel multiDel = Program_10_P4.Sample.Show1;
+//multiDel += Program_10_P4.Sample.Show2;
+//multiDel += Program_10_P4.Sample.Show3;
+//multiDel();
+//namespace Program_10_P4
+//{
+//    public delegate void MultiDel();
+//    class Sample
+//    {
+//        public static void Show1()
+//        {
+//            Console.WriteLine("Show1() is called.");
+//        }
+//        public static void Show2()
+//        {
+//            Console.WriteLine("Show2() is called.");
+//        }
+//        public static void Show3()
+//        {
+//            Console.WriteLine($"Show3() is called.");
+//        }
+//    }
+//}
 
+//// 10.P5
+//Action multiDel = Program_10_P5.Sample.Show1;
+//multiDel += Program_10_P5.Sample.Show2;
+//multiDel += Program_10_P5.Sample.Show3;
+//multiDel(); 
+//namespace Program_10_P5
+//{
+//    public delegate void MultiDel();
+//    class Sample
+//    {
+//        public static void Show1()
+//        {
+//            Console.WriteLine("Show1() is called");
+//        }
+//        public static void Show2()
+//        {
+//            Console.WriteLine("Show2() is called");
+//        }
+//        public static void Show3()
+//        {
+//            Console.WriteLine("Show3() is called");
+//        }
+//    }
+//}
 
+//// 10.P6 Generic Delegates
+//Func<double, double, int> del = Sample.Sum;
+//Console.WriteLine($"Approximately, the sum of {10.5} and {20.7} is: {del(10.5,20.7)}");
+//class Sample
+//{
+//    public static int Sum(double a, double b)
+//    {
+//        Console.WriteLine("The Sum method of the Sample class is invoked.");
+//        double temp = a + b;
+//        return (int)temp;
+//    }
+//}
 
+//// 10.P7
+//Func<int, int, int> del = Program_10_P7.Sample.Sum;
+//del += Program_10_P7.Sample.Difference;
+//int finalValue = del(10, 5);
+//Console.WriteLine($"The final value is {finalValue}");
 
+//namespace Program_10_P7
+//{
+//    class Sample
+//    {
+//        public static int Sum(int a, int b)
+//        {
+//            return a + b;
+//        }
+//        public static int Difference(int a, int b)
+//        {
+//            return a - b;
+//        }
+//    }
+//}
+
+//// 10.P8 Variance in Delegates
+//Prog_10_P8.Vehicle vehicleOb = new();
+//Prog_10_P8.Bus busOb = new();
+//Func<Prog_10_P8.Vehicle> del = vehicleOb.CreateVehicle;
+//del();
+//del = busOb.CreateBus;
+//del();
+
+//namespace Prog_10_P8
+//{
+//    class Vehicle
+//    {
+//        Vehicle? vehicle;
+//        public Vehicle CreateVehicle()
+//        {
+//            vehicle = new Vehicle();
+//            Console.WriteLine("One vehicle is created.");
+//            return vehicle;
+//        }
+//    }
+//    class Bus : Vehicle
+//    {
+//        Bus? bus;
+//        public Bus CreateBus()
+//        {
+//            bus = new Bus();
+//            Console.WriteLine("One bus is created.");
+//            return bus;
+//        }
+//    }
+//}
+
+//// 10.P9
+//Prog_10_P9.Vehicle myVehicle = new();
+//Prog_10_P9.Bus myBus = new();
+//// Normal case
+//Action<Prog_10_P9.Bus> del = Prog_10_P9.Bus.ShowBus;
+//del(myBus);
+//// Testing Contravariance
+//del = Prog_10_P9.Vehicle.ShowVehicle;
+//del(myBus);
+
+//namespace Prog_10_P9
+//{
+//    class Vehicle
+//    {
+//        public static void ShowVehicle(Vehicle myVehicle)
+//        {
+//            Console.WriteLine("Show Vehicle is called.");
+//            Console.WriteLine("This is a generic vehicle.\n");
+//        }
+//    }
+//    class Bus : Vehicle
+//    {
+//        public static void ShowBus(Bus myBus)
+//        {
+//            Console.WriteLine("ShowBus is called");
+//            Console.WriteLine("This is a bus.\n");
+//        }
+//    }
+//}
 
 
 
