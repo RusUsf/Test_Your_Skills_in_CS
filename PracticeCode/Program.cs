@@ -3345,7 +3345,59 @@
 // 10.P10 Delegate Compatibility
 
 // Chapter 11 Events
+// 10.T1
+Console.WriteLine("---10.T1---");
+Sender sender = new();
+Reciever reciever = new();
 
+// Reciever registers for a notification from sender
+sender.FlagChanged += reciever.GetNotification;
+
+Console.WriteLine("Setting flag to 1.");
+sender.Flag = 1;
+Console.WriteLine("Setting flag to 2.");
+sender.Flag = 2;
+
+// Unregestering now
+sender.FlagChanged -= reciever.GetNotification;
+Console.WriteLine("Setting the flag to 3.");
+
+// No notifications sent for the reciever now
+sender.Flag = 3;
+Console.WriteLine("Setting the flag to 4.");
+sender.Flag = 4;
+
+class Sender
+{
+    private int _flag;
+    public int Flag
+    {
+        get
+        {
+            return _flag;
+        }
+        set
+        {
+            _flag = value;
+            OnFlagChanged();
+        }
+    }
+
+    public event EventHandler? FlagChanged;
+    public void OnFlagChanged()
+    {
+        // Simplified form:
+        FlagChanged?.Invoke(this, EventArgs.Empty);
+    }
+}
+
+class Reciever
+{
+    public void GetNotification(object? sender, System.EventArgs e)
+    {
+        Console.WriteLine($"ALERT: The flag value is changed in the Sender.");
+    }
+}
 
 
 
