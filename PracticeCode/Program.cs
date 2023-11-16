@@ -3437,8 +3437,68 @@
 //    }
 //}
 
-// 11.P2 Passing Data with Events
+//// 11.P2 Passing Data with Events
+//// Using this class to pass an event argument
+//Sender sender = new();
+//Reciever receiver = new();
+//// Receiver registers for a notification from sender
+//sender.FlagChanged += receiver.GetNotification;
 
+//Console.WriteLine("Setting the flag to 1.");
+//sender.Flag = 1;
+//Console.WriteLine("Setting the flag to 2.");
+//sender.Flag = 2;
+
+//class FlagEventArgs
+//{
+//    int _currentFlag;
+//    public int CurrentFlag
+//    {
+//        get { return _currentFlag; }
+//        set { _currentFlag = value; }
+//    }
+//}
+//class Sender
+//{
+//    //OPTION 1: Using custom delegate
+//    //public delegate void FlagChangedEventHandler(object? sender, FlagEventArgs eventArgs);
+//    //public event FlagChangedEventHandler? FlagChanged;
+
+//    //OPTION 2: Using built-in delegate
+//    //public event Action<object?, FlagEventArgs>? FlagChanged;
+    
+//    //OPTION 3: Using generic version of an Event delegate
+//    public event EventHandler<FlagEventArgs> FlagChanged;
+
+//    private int _flag;
+//    public int Flag
+//    {
+//        get
+//        {
+//            return _flag;
+//        }
+//        set
+//        {
+//            _flag = value;
+//            OnFlagChanged();
+//        }
+//    }
+
+//    public void OnFlagChanged()
+//    {
+//        FlagEventArgs flagEventArgs = new();
+//        flagEventArgs.CurrentFlag = _flag;
+//        FlagChanged?.Invoke(this, flagEventArgs);
+//    }
+//}
+
+//class Reciever
+//{
+//    public void GetNotification(object? sender, FlagEventArgs e)
+//    {
+//        Console.WriteLine($"ALERT: The flag value is changed to {e.CurrentFlag}");
+//    }
+//}
 
 
 
