@@ -3466,7 +3466,7 @@
 
 //    //OPTION 2: Using built-in delegate
 //    //public event Action<object?, FlagEventArgs>? FlagChanged;
-    
+
 //    //OPTION 3: Using generic version of an Event delegate
 //    public event EventHandler<FlagEventArgs> FlagChanged;
 
@@ -3500,8 +3500,72 @@
 //    }
 //}
 
+//// 11.P3 Event Accessorss
+//Sender sender = new();
+//Reciever reciever = new();
+//// Reciever registers for a notification from sender
+//Console.WriteLine("Registering the notification event.");
+//sender.FlagChanged += reciever.GetNotification;
+//Console.WriteLine("Setting the flag to 1.");
+//sender.Flag = 1;
+//Console.WriteLine("Unregistering the event.");
+//sender.FlagChanged -= reciever.GetNotification;
+//class FlagEventArgs
+//{
+//    int _currentFlag;
+//    public int CurrentFlag
+//    {
+//        get { return _currentFlag; }
+//        set { _currentFlag = value; }
+//    }
+//}
 
+//class Sender
+//{
+//    public delegate void FlagChangedEventHandler(object? sender, FlagEventArgs eventArgs);
+//    private event FlagChangedEventHandler? InnerFlagChanged;
+//    public event FlagChangedEventHandler? FlagChanged
+//    {
+//        add
+//        {
+//            Console.WriteLine("The entry point of the add accessor.");
+//            InnerFlagChanged += value;
+//        }
+//        remove
+//        {
+//            InnerFlagChanged -= value;
+//            Console.WriteLine("The exit point of the remove accessor.");
+//        }
+//    }
 
+//    private int _flag;
+//    public int Flag
+//    {
+//        get
+//        {
+//            return _flag;
+//        }
+//        set
+//        {
+//            _flag = value;
+//            OnFlagChanged();
+//        }
+//    }
+//    public void OnFlagChanged()
+//    {
+//        FlagEventArgs flagEventArgs = new();
+//        flagEventArgs.CurrentFlag = _flag;
+//        InnerFlagChanged?.Invoke(this, flagEventArgs);
+//    }
+//}
+
+//class Reciever
+//{
+//    public void GetNotification(object? sender, FlagEventArgs e)
+//    {
+//        Console.WriteLine($"\nALERT: The flag value is changed to {e.CurrentFlag}.");
+//    }
+//}
 
 
 
