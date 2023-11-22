@@ -3522,9 +3522,16 @@
 
 //class Sender
 //{
-//    public delegate void FlagChangedEventHandler(object? sender, FlagEventArgs eventArgs);
-//    private event FlagChangedEventHandler? InnerFlagChanged;
-//    public event FlagChangedEventHandler? FlagChanged
+
+//    //OPTION 1: Custom Delegate usage
+//    //public delegate void FlagChangedEventHandler(object? sender, FlagEventArgs eventArgs);
+//    //private event FlagChangedEventHandler? InnerFlagChanged;
+//    //public event FlagChangedEventHandler? FlagChanged
+
+//    //OPTION 2: Generic delegate usage
+//    private event Action<object?, FlagEventArgs>? InnerFlagChanged;
+//    public event Action<object?, FlagEventArgs>? FlagChanged
+
 //    {
 //        add
 //        {
@@ -3567,6 +3574,52 @@
 //    }
 //}
 
+//// 11.P4 Interface Events
+//Sender sender = new();
+//Reciever reciever = new();
+//// Reciever registers for a notification from the sender
+//sender.FlagChanged += reciever.GetNotification;
+//Console.WriteLine("Setting the flag to 1.");
+//sender.Flag = 1;
+//Console.WriteLine("Setting the flag to 2.");
+//sender.Flag = 2;
+//// Unregistering now
+//sender.FlagChanged -= reciever.GetNotification;
+//interface ISender
+//{
+//    event EventHandler? FlagChanged;
+//}
+//class Sender : ISender
+//{
+//    private int _flag;
+//    public int Flag
+//    {
+//        get
+//        {
+//            return _flag;
+//        }
+//        set
+//        {
+//            _flag = value;
+//            OnFlagChanged();
+//        }
+//    }
+
+//    public event EventHandler? FlagChanged;
+
+//    public void OnFlagChanged()
+//    {
+//        FlagChanged?.Invoke(this, EventArgs.Empty);
+//    }
+
+//}
+//class Reciever
+//{
+//    public void GetNotification(object? sender, System.EventArgs e)
+//    {
+//        Console.WriteLine($"ALERT: The flag value is changed in the Sender.");
+//    }
+//}
 
 
 
