@@ -3621,6 +3621,41 @@
 //    }
 //}
 
+// Chapter 12 Lambda Expressions
+//12.T2
+using System.Diagnostics;
+
+Console.WriteLine("Using a normal call.");
+int a = 10, b = 5;
+Console.WriteLine("Invoking the Sum() method without using a delegate.");
+Console.WriteLine($"The sum of {a} and {b} is: {Sample.Sum(a,b)}");
+
+// Using an in-built delegate
+Func<int, int, int> del1 = Sample.Sum;
+Console.WriteLine("\nUsing delegate now.");
+Console.WriteLine("Invoking the Sum() method using a delegate");
+Console.WriteLine($"The sum of {a} and {b} is: {del1(a,b)}");
+
+// Using Anonymous method
+Console.WriteLine("\nUsing an anonymous method now.");
+Sample.Mydel del2 = delegate (int x, int y) { return x + y; };
+Console.WriteLine("Invoking the Sum() method using an anonymous method.");
+Console.WriteLine($"The sum of {a} and {b} is: {del2(a,b)}");
+
+// Using a lambda expression 
+Console.WriteLine("\n Using lambda expressin now.");
+Func<int, int, int> del3 = (x, y) => x + y;
+Console.WriteLine($"The sum of {a} and {b} is {del3(a,b)}");
+
+class Sample
+{
+    public delegate int Mydel(int x, int y);
+    public static int Sum(int x, int y)
+    {
+        return x + y;
+    }
+}
+
 
 
 
