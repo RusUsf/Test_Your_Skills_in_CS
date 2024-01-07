@@ -3,7 +3,6 @@ C:\Users\rus_d\OneDrive\Desktop\Coding\Laptop\CSharp\Test_Your_Skills_in_CS\Prac
 C:\Users\rus_d\OneDrive\Desktop\Coding\Laptop\CSharp\Test_Your_Skills_in_CS\PracticeCode\bin\Debug\net8.0\PracticeCode.runtimeconfig.json
 C:\Users\rus_d\OneDrive\Desktop\Coding\Laptop\CSharp\Test_Your_Skills_in_CS\PracticeCode\bin\Debug\net8.0\PracticeCode.dll
 C:\Users\rus_d\OneDrive\Desktop\Coding\Laptop\CSharp\Test_Your_Skills_in_CS\PracticeCode\bin\Debug\net8.0\PracticeCode.pdb
-C:\Users\rus_d\OneDrive\Desktop\Coding\Laptop\CSharp\Test_Your_Skills_in_CS\PracticeCode\obj\Debug\net8.0\PracticeCode.csproj.AssemblyReference.cache
 C:\Users\rus_d\OneDrive\Desktop\Coding\Laptop\CSharp\Test_Your_Skills_in_CS\PracticeCode\obj\Debug\net8.0\PracticeCode.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\rus_d\OneDrive\Desktop\Coding\Laptop\CSharp\Test_Your_Skills_in_CS\PracticeCode\obj\Debug\net8.0\PracticeCode.AssemblyInfoInputs.cache
 C:\Users\rus_d\OneDrive\Desktop\Coding\Laptop\CSharp\Test_Your_Skills_in_CS\PracticeCode\obj\Debug\net8.0\PracticeCode.AssemblyInfo.cs
