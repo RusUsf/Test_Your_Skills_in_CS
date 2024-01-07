@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Lenovo\\Desktop\\Coding\\CSharp\\test_your_skills_in_cs\\PracticeCode\\PracticeCode.csproj": {}
+    "C:\\Users\\rus_d\\OneDrive\\Desktop\\Coding\\Laptop\\CSharp\\Test_Your_Skills_in_CS\\PracticeCode\\PracticeCode.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Lenovo\\Desktop\\Coding\\CSharp\\test_your_skills_in_cs\\PracticeCode\\PracticeCode.csproj": {
+    "C:\\Users\\rus_d\\OneDrive\\Desktop\\Coding\\Laptop\\CSharp\\Test_Your_Skills_in_CS\\PracticeCode\\PracticeCode.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lenovo\\Desktop\\Coding\\CSharp\\test_your_skills_in_cs\\PracticeCode\\PracticeCode.csproj",
+        "projectUniqueName": "C:\\Users\\rus_d\\OneDrive\\Desktop\\Coding\\Laptop\\CSharp\\Test_Your_Skills_in_CS\\PracticeCode\\PracticeCode.csproj",
         "projectName": "PracticeCode",
-        "projectPath": "C:\\Users\\Lenovo\\Desktop\\Coding\\CSharp\\test_your_skills_in_cs\\PracticeCode\\PracticeCode.csproj",
-        "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lenovo\\Desktop\\Coding\\CSharp\\test_your_skills_in_cs\\PracticeCode\\obj\\",
+        "projectPath": "C:\\Users\\rus_d\\OneDrive\\Desktop\\Coding\\Laptop\\CSharp\\Test_Your_Skills_in_CS\\PracticeCode\\PracticeCode.csproj",
+        "packagesPath": "C:\\Users\\rus_d\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\rus_d\\OneDrive\\Desktop\\Coding\\Laptop\\CSharp\\Test_Your_Skills_in_CS\\PracticeCode\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\rus_d\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -55,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-preview.1.23115.2\\RuntimeIdentifierGraph.json"
         }
       }
     }
