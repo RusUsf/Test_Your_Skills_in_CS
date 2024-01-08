@@ -30,14 +30,16 @@ public class Sample
         return x + y;
     }
 
-    public class GenericEventHandler<T>
-    {
-        public delegate void DataChangedDelegate(object sender, T data);
-        public event DataChangedDelegate DataChanged;
+    public static bool IsPositive(int x) => x > 0;
 
-        public void OnDataChanged(T data)
-        {
-            DataChanged?.Invoke(this, data);
-        }
+}
+public class GenericEventHandler<T>
+{
+    public delegate void DataChangedDelegate(object sender, T data);
+    public event DataChangedDelegate DataChanged;
+
+    public void OnDataChanged(T data)
+    {
+        DataChanged?.Invoke(this, data);
     }
 }

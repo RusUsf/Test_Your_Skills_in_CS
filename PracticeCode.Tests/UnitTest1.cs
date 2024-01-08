@@ -38,7 +38,7 @@ public class Tests
     {
         var eventHandler = new GenericEventHandler<string>();
         var eventTriggred = false;
-        string? eventData = null;
+        var eventData = string.Empty;
 
         eventHandler.DataChanged += (sender, data) =>
         {
@@ -50,5 +50,12 @@ public class Tests
 
         eventTriggred.Should().BeTrue();
         eventData.Should().Be("Hello World");
+    }
+
+    [Test]
+    public void ShouldReturnTrueIfPositive()
+    {
+        var result = Sample.IsPositive(-5);
+        result.Should().BeFalse();
     }
 }

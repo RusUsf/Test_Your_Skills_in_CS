@@ -4113,23 +4113,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\rus_d\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Lenovo\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\rus_d\\OneDrive\\Desktop\\Coding\\Laptop\\CSharp\\Test_Your_Skills_in_CS\\PracticeCode.Tests\\PracticeCode.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\Lenovo\\Desktop\\Coding\\CSharp\\test_your_skills_in_cs\\PracticeCode.Tests\\PracticeCode.Tests.csproj",
       "projectName": "PracticeCode.Tests",
-      "projectPath": "C:\\Users\\rus_d\\OneDrive\\Desktop\\Coding\\Laptop\\CSharp\\Test_Your_Skills_in_CS\\PracticeCode.Tests\\PracticeCode.Tests.csproj",
-      "packagesPath": "C:\\Users\\rus_d\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\rus_d\\OneDrive\\Desktop\\Coding\\Laptop\\CSharp\\Test_Your_Skills_in_CS\\PracticeCode.Tests\\obj\\",
+      "projectPath": "C:\\Users\\Lenovo\\Desktop\\Coding\\CSharp\\test_your_skills_in_cs\\PracticeCode.Tests\\PracticeCode.Tests.csproj",
+      "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Lenovo\\Desktop\\Coding\\CSharp\\test_your_skills_in_cs\\PracticeCode.Tests\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\rus_d\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4143,8 +4139,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\rus_d\\OneDrive\\Desktop\\Coding\\Laptop\\CSharp\\Test_Your_Skills_in_CS\\PracticeCode\\PracticeCode.csproj": {
-              "projectPath": "C:\\Users\\rus_d\\OneDrive\\Desktop\\Coding\\Laptop\\CSharp\\Test_Your_Skills_in_CS\\PracticeCode\\PracticeCode.csproj"
+            "C:\\Users\\Lenovo\\Desktop\\Coding\\CSharp\\test_your_skills_in_cs\\PracticeCode\\PracticeCode.csproj": {
+              "projectPath": "C:\\Users\\Lenovo\\Desktop\\Coding\\CSharp\\test_your_skills_in_cs\\PracticeCode\\PracticeCode.csproj"
             }
           }
         }
@@ -4153,9 +4149,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "default"
       }
     },
     "frameworks": {
@@ -4203,7 +4196,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-preview.1.23115.2\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
