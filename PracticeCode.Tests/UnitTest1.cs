@@ -58,4 +58,11 @@ public class Tests
         var result = Sample.IsPositive(-5);
         result.Should().BeFalse();
     }
+
+    [Test]
+    public void ShouldReturnFalseIfNegativeLambda()
+    {
+        var result = Sample2.IsPositive(5);
+        result.Should().BeTrue();
+    }
 }

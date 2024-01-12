@@ -43,3 +43,9 @@ public class GenericEventHandler<T>
         DataChanged?.Invoke(this, data);
     }
 }
+
+public class Sample2
+{
+    public static bool IsPositive(int x) => x > 0;
+}
+
