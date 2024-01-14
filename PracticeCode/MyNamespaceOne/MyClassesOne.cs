@@ -49,3 +49,19 @@ public class Sample2
     public static bool IsPositive(int x) => x > 0;
 }
 
+public class LambdaOne
+{
+
+    public static string NoParameterLambda() => "Hello World!";
+    public static int OneParameterLambda(int x) => x * x;
+    public static void MultpipleExpressionLambda(int x, int y)
+    {
+        Action<int, int> del3 = (int x, int y) =>
+            {
+                int sum = x + y;
+                Console.WriteLine($"The sum of {x} and {y} is {sum}");
+            };
+        
+        del3(x,y);
+    }
+}

@@ -65,4 +65,28 @@ public class Tests
         var result = Sample2.IsPositive(5);
         result.Should().BeTrue();
     }
+
+    [Test]
+    public void ShouldReturnHelloWorld()
+    {
+        // Arrange: 
+        var expected = "Hello World!";
+        
+        // Act:
+        string result = LambdaOne.NoParameterLambda();
+
+        // Assert:
+        result.Should().Be(expected);
+    }
+
+    [Test]
+    public void ShouldReturnSquare()
+    {
+        // Arrange:
+        var expected = 4;
+        // Act:
+        int resutl = LambdaOne.OneParameterLambda(2);
+        // Assert:
+        resutl.Should().Be(expected);
+    }
 }

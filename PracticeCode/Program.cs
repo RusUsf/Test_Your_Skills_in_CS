@@ -3621,37 +3621,56 @@
 //    }
 //}
 
-// Chapter 12 Lambda Expressions
-//12.T2
-using System.Diagnostics;
-using PracticeCode.MyNamespaceOne;
+//// Chapter 12 Lambda Expressions
+////12.T2
+//using System.Diagnostics;
+//using PracticeCode.MyNamespaceOne;
 
-Console.WriteLine("Using a normal call.");
-int a = 10, b = 5;
-Console.WriteLine("Invoking the Sum() method without using a delegate.");
-Console.WriteLine($"The sum of {a} and {b} is: {Sample.Sum(a,b)}");
+//Console.WriteLine("Using a normal call.");
+//int a = 10, b = 5;
+//Console.WriteLine("Invoking the Sum() method without using a delegate.");
+//Console.WriteLine($"The sum of {a} and {b} is: {Sample.Sum(a,b)}");
 
-// Using an in-built delegate
-Func<int, int, int> del1 = Sample.Sum;
-Console.WriteLine("\nUsing delegate now.");
-Console.WriteLine("Invoking the Sum() method using a delegate");
-Console.WriteLine($"The sum of {a} and {b} is: {del1(a,b)}");
+//// Using an in-built delegate
+//Func<int, int, int> del1 = Sample.Sum;
+//Console.WriteLine("\nUsing delegate now.");
+//Console.WriteLine("Invoking the Sum() method using a delegate");
+//Console.WriteLine($"The sum of {a} and {b} is: {del1(a,b)}");
 
-// Using Anonymous method
-Console.WriteLine("\nUsing an anonymous method now.");
-//Sample.Mydel del2 = delegate (int x, int y) { return x + y; };
-Console.WriteLine("Invoking the Sum() method using an anonymous method.");
-//Console.WriteLine($"The sum of {a} and {b} is: {del2(a,b)}");
+//// Using Anonymous method
+//Console.WriteLine("\nUsing an anonymous method now.");
+////Sample.Mydel del2 = delegate (int x, int y) { return x + y; };
+//Console.WriteLine("Invoking the Sum() method using an anonymous method.");
+////Console.WriteLine($"The sum of {a} and {b} is: {del2(a,b)}");
 
-// Using a lambda expression 
-Console.WriteLine("\n Using lambda expressin now.");
-Func<int, int, int> del3 = (x, y) => x + y;
-Console.WriteLine($"The sum of {a} and {b} is {del3(a,b)}");
+//// Using a lambda expression 
+//Console.WriteLine("\n Using lambda expressin now.");
+//Func<int, int, int> del3 = (x, y) => x + y;
+//Console.WriteLine($"The sum of {a} and {b} is {del3(a,b)}");
 
 // 12.T3
 // See UnitTest1
 
+// 12.P1
+using PracticeCode.MyNamespaceOne;
 
+LambdaOne.NoParameterLambda();
+Console.WriteLine($"The Square of 9 is {LambdaOne.OneParameterLambda(9)}");
+LambdaOne.MultpipleExpressionLambda(30,20);
+
+
+//Action del1 = () => Console.WriteLine("Hello");
+//del1();
+
+//Func<int, int> del2 = x => x * x;
+//Console.WriteLine($"Square of 9 is {del2(9)}");
+
+//Action<int, int> del3 = (int x, int y) =>
+//{
+//    int sum = x + y;
+//    Console.WriteLine($"The sum of {x} and {y} is {sum}");
+//};
+//del3(10, 20);
 
 
 
