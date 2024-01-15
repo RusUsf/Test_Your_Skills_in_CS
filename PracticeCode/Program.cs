@@ -3651,12 +3651,12 @@
 // 12.T3
 // See UnitTest1
 
-// 12.P1
-using PracticeCode.MyNamespaceOne;
+//// 12.P1
+//using PracticeCode.MyNamespaceOne;
 
-LambdaOne.NoParameterLambda();
-Console.WriteLine($"The Square of 9 is {LambdaOne.OneParameterLambda(9)}");
-LambdaOne.MultpipleExpressionLambda(30,20);
+//LambdaOne.NoParameterLambda();
+//Console.WriteLine($"The Square of 9 is {LambdaOne.OneParameterLambda(9)}");
+//LambdaOne.MultpipleExpressionLambda(30,20);
 
 
 //Action del1 = () => Console.WriteLine("Hello");
@@ -3672,7 +3672,8 @@ LambdaOne.MultpipleExpressionLambda(30,20);
 //};
 //del3(10, 20);
 
-
+// 12.P2 Expression-Bodied Members
+Console.WriteLine("Hello World!, I am practicing C# Lambda Expressions!");
 
 
 

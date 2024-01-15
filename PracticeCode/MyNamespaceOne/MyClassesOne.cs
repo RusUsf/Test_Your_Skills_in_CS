@@ -61,7 +61,36 @@ public class LambdaOne
                 int sum = x + y;
                 Console.WriteLine($"The sum of {x} and {y} is {sum}");
             };
-        
-        del3(x,y);
+
+        del3(x, y);
+    }
+}
+
+public class Test
+{
+    public int CalculateSum1(int a, int b)
+    {
+        int sum = a + b;
+        return sum;
+    }
+
+    public int CalculateSum2(int a, int b) => a + b;
+}
+
+public class Employee
+{
+    readonly int empId = 0;
+    readonly string company = "XYZ Company";
+    string name = string.Empty;
+    public Employee(int id) => empId = id;
+    public string Company => company;
+    public string Name
+    {
+        get => name;
+        set => name = value;
+    }
+    public int Id
+    {
+        get => empId;
     }
 }
