@@ -3672,10 +3672,67 @@
 //};
 //del3(10, 20);
 
-// 12.P2 Expression-Bodied Members
-Console.WriteLine("Hello World!, I am practicing C# Lambda Expressions!");
+//// 12.P2 Expression-Bodied Members
+//Console.WriteLine("Hello World!, I am practicing C# Lambda Expressions!");
 
+//// 12.P4 See Tests
+//// 12.P5
+//List<int> numbers = new() { 12, 23, 37, 45, 52 };
+//Console.WriteLine("The list contains the following numbers");
+//foreach (int number in numbers)
+//{
+//    Console.WriteLine(number+"\t");
+//}
+//Console.WriteLine("\nFinding the numbers which are greater than 30.");
 
+//#region Using method call syntax
+//Console.WriteLine("\nUsing the method call syntax:");
+//IEnumerable<int> numbersAbove30 = numbers.Where(x => x > 30);
+//foreach (int number in numbersAbove30)
+//{
+//    Console.WriteLine(number);
+//}
+
+//#endregion
+
+//#region Using the query syntax
+//var query = from num in numbers
+//            where num > 30
+//            select num;
+//Console.WriteLine("Using the query syntax now.");
+//foreach(int number in query)
+//{
+//    Console.WriteLine(number);
+//}
+//#endregion
+
+//// 12.P6 Tuples in Lambda Expressions
+//using PracticeCode.MyNamespaceOne;
+
+//var input = Tuple.Create(1, 2.3);
+//Console.WriteLine("The input tuple is as follows:");
+//Console.WriteLine("First Element: " + input.Item1);
+//Console.WriteLine("Second Element: " + input.Item2);
+
+//SampleClass.DoubleMaker del = (Tuple<int, double> input) => Tuple.Create(input.Item1 * 2, input.Item2 * 2);
+
+//var result = del(input);
+//Console.WriteLine("\nThe resultant tuple is as follows:");
+//Console.WriteLine("First Element: " + result.Item1);
+//Console.WriteLine("Second Element: " + result.Item2);
+
+//// 12.P7
+//var input2 = Tuple.Create(1, 2.3);
+//Console.WriteLine("The input tuple is as follows:");
+//Console.WriteLine("First Element:" + input2.Item1);
+//Console.WriteLine("Second Element:" + input2.Item2);
+
+//Func<Tuple<int, double>, Tuple<int, double>> del = (Tuple<int, double> input2) => Tuple.Create(input2.Item1 * 2, input2.Item2 * 2);
+
+//var result = del(input2);
+//Console.WriteLine("\nThe resultant tuple is as follows:");
+//Console.WriteLine("First Element:"+result.Item1);
+//Console.WriteLine("Second Element:"+result.Item2);
 
 
 

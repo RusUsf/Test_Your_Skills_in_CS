@@ -94,3 +94,12 @@ public class Employee
         get => empId;
     }
 }
+
+public class SampleClass
+{
+    internal delegate Tuple<int,double> DoubleMaker(Tuple<int,double> input);
+    static internal Tuple<int, double> MakeDouble(Tuple<int, double> input)
+    {
+        return Tuple.Create(input.Item1 * 2, input.Item2 * 2);
+    }
+}
