@@ -97,9 +97,68 @@ public class Employee
 
 public class SampleClass
 {
-    internal delegate Tuple<int,double> DoubleMaker(Tuple<int,double> input);
+    internal delegate Tuple<int, double> DoubleMaker(Tuple<int, double> input);
     static internal Tuple<int, double> MakeDouble(Tuple<int, double> input)
     {
         return Tuple.Create(input.Item1 * 2, input.Item2 * 2);
     }
 }
+
+public class MySender
+{
+    private int _flag;
+    public int Flag
+    {
+        get
+        {
+            return _flag;
+        }
+        set
+        {
+            _flag = value;
+            OnMyIntChanged();
+        }
+    }
+
+    public event EventHandler MyIntChanged;
+    public void OnMyIntChanged()
+    {
+        MyIntChanged?.Invoke(this, EventArgs.Empty);
+    }
+}
+
+
+public class MySenderOne
+{
+    private int _flag;
+    public int Flag
+    {
+        get
+        {
+            return _flag;
+        }
+        set
+        {
+            _flag = value;
+            OnMyIntChanged();
+        }
+    }
+
+    public event EventHandler? MyIntChanged;
+    public void OnMyIntChanged()
+    {
+        MyIntChanged?.Invoke(this, EventArgs.Empty);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

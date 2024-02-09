@@ -3734,7 +3734,53 @@
 //Console.WriteLine("First Element:"+result.Item1);
 //Console.WriteLine("Second Element:"+result.Item2);
 
+//// 12.P8 Event Subscription
+//using PracticeCode.MyNamespaceOne;
 
+//MySender sender = new MySender();
+//EventHandler myEvent =
+//    (object sender, EventArgs e) =>
+//    Console.WriteLine("The flag is changed.");
+//Console.WriteLine("Registering the event.");
+//sender.MyIntChanged += myEvent;
+//Console.WriteLine("Setting the flag to 1.");
+//sender.Flag = 1;
+//Console.WriteLine("Setting the flag to 2.");
+//sender.Flag = 2;
+//Console.WriteLine("\nUnregistering the event.");
+//sender.MyIntChanged -= myEvent;
+//Console.WriteLine("Setting the flag to 3.");
+//sender.Flag = 3;
+
+//// 12.P9
+//using PracticeCode.MyNamespaceOne;
+//MySenderOne senderOne = new MySenderOne();
+//Console.WriteLine("Registering the event.");
+//// Using lambda expression as an event handler
+//// Bad practice
+//senderOne.MyIntChanged += (object senderOne, System.EventArgs e) =>
+//Console.WriteLine("The flag is changed.");
+//Console.WriteLine("Setting the falg to 1.");
+//senderOne.Flag = 1;
+//Console.WriteLine("Setting the flag to 2.");
+//senderOne.Flag = 2;
+//Console.WriteLine("\nUnregistering the event.");
+//// Unregistering now (it is a bad practice)
+//senderOne.MyIntChanged -= (object senderOne, System.EventArgs e) =>
+//Console.WriteLine("Unregistered event notification.");
+//Console.WriteLine("Setting the flag to 3.");
+//senderOne.Flag = 3;
+
+//// 12.P11
+
+//// Code Segment - 1
+//Func<string, double> del = (string s) => double.Parse(s);
+//double flag2 = del("23.4");
+//Console.WriteLine(flag2);
+
+//// Code Segment - 2
+//var flag1 = (string s) => double.Parse(s);
+//Console.WriteLine(flag1("23.4"));
 
 
 
