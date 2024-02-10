@@ -3782,6 +3782,41 @@
 //var flag1 = (string s) => double.Parse(s);
 //Console.WriteLine(flag1("23.4"));
 
+//// Chapter 13
+
+//// GENERICS
+
+//// 13.T9 Built-in generic classes
+//using System.Linq.Expressions;
+
+//Dictionary<int, string> employees = new();
+//employees.Add(1, "Sam");
+//employees.Add(2, "Bob");
+//employees.Add(3, "Kate");
+//Console.WriteLine("The dictionary elements are.");
+//foreach(KeyValuePair<int, string> element in employees)
+//{
+//    Console.WriteLine($"ID:{element.Key} Name: {element.Value}");
+//}
+
+//// 13.P1
+//using PracticeCode.MyNamespaceOne;
+
+//MyPrice<int> intOb = new();
+//Console.WriteLine($"The int version shows {intOb.Display(123)}");
+//MyPrice<string> stringOb = new();
+//Console.WriteLine($"The string version shows {stringOb.Display("hello")}");
+//MyPrice<double> doubleOb = new();
+//Console.WriteLine($"Teh double version shows {doubleOb.Display(456.78)}");
+
+
+
+
+
+
+
+
+
 
 
 

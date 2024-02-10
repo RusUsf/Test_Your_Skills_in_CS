@@ -151,6 +151,11 @@ public class MySenderOne
     }
 }
 
+public class MyPrice<T>
+{
+    public T Display(T value) => value;
+}
+
 
 
 
