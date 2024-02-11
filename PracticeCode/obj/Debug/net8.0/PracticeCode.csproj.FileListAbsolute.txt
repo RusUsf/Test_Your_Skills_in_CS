@@ -89,3 +89,4 @@ C:\Users\Lenovo\Desktop\Coding\CSharp\test_your_skills_in_cs\PracticeCode\bin\De
 C:\Users\Lenovo\Desktop\Coding\CSharp\test_your_skills_in_cs\PracticeCode\bin\Debug\net8.0\PracticeCode.pdb
 C:\Users\Lenovo\Desktop\Coding\CSharp\test_your_skills_in_cs\PracticeCode\obj\Debug\net8.0\PracticeCode.genruntimeconfig.cache
 C:\Users\Lenovo\Desktop\Coding\CSharp\test_your_skills_in_cs\PracticeCode\obj\Debug\net8.0\ref\PracticeCode.dll
+C:\Users\rus_d\OneDrive\Desktop\Coding\Laptop\CSharp\Test_Your_Skills_in_CS\PracticeCode\obj\Debug\net8.0\PracticeCode.csproj.AssemblyReference.cache

@@ -156,7 +156,15 @@ public class MyPrice<T>
     public T Display(T value) => value;
 }
 
-
+public class MySampleGenerics
+{
+    internal static void PrintDefault<T>()
+    {
+        T? defaultValue = default;
+        string?printMe=(defaultValue==null)?"null":defaultValue.ToString();
+        Console.WriteLine($"The default value of {typeof(T)} is {printMe}.");
+    }
+}
 
 
 

@@ -3809,6 +3809,20 @@
 //MyPrice<double> doubleOb = new();
 //Console.WriteLine($"Teh double version shows {doubleOb.Display(456.78)}");
 
+//// 13.P3
+//using PracticeCode.MyNamespaceOne;
+
+//MySampleGenerics.PrintDefault<int>();
+//MySampleGenerics.PrintDefault<int?>();
+//MySampleGenerics.PrintDefault<sbyte>();
+//MySampleGenerics.PrintDefault<double>();
+//MySampleGenerics.PrintDefault<bool>();
+//MySampleGenerics.PrintDefault<string>();
+//MySampleGenerics.PrintDefault<object>();
+//MySampleGenerics.PrintDefault<System.Numerics.Complex>();
+//MySampleGenerics.PrintDefault<List<int>>();
+//MySampleGenerics.PrintDefault<List<string>>();
+        
 
 
 
