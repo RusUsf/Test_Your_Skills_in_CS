@@ -27,7 +27,6 @@ C:\Users\User\Desktop\Learn_to_Code\CSharp\Test_Your_Skills_in_CS\PracticeCode\o
 C:\Users\User\Desktop\Learn_to_Code\CSharp\Test_Your_Skills_in_CS\PracticeCode\obj\Debug\net8.0\PracticeCode.pdb
 C:\Users\User\Desktop\Learn_to_Code\CSharp\Test_Your_Skills_in_CS\PracticeCode\obj\Debug\net8.0\PracticeCode.genruntimeconfig.cache
 C:\Users\User\Desktop\Learn_to_Code\CSharp\Test_Your_Skills_in_CS\PracticeCode\obj\Debug\net8.0\ref\PracticeCode.dll
-C:\Users\User\Desktop\Learn_to_Code\CSharp\Test_Your_Skills_in_CS\PracticeCode\obj\Debug\net8.0\PracticeCode.csproj.AssemblyReference.cache
 C:\MyFiles_RuslanDubas\Textbooks\More\CSharp\Test_Your_Skills_in_CS\PracticeCode\bin\Debug\net8.0\PracticeCode.exe
 C:\MyFiles_RuslanDubas\Textbooks\More\CSharp\Test_Your_Skills_in_CS\PracticeCode\bin\Debug\net8.0\PracticeCode.deps.json
 C:\MyFiles_RuslanDubas\Textbooks\More\CSharp\Test_Your_Skills_in_CS\PracticeCode\bin\Debug\net8.0\PracticeCode.runtimeconfig.json

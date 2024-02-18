@@ -1,4 +1,6 @@
-﻿//using PracticeCode.MyNamespaceOne;
+﻿Console.WriteLine("Hello World! I am practicing C# Skills with TDD");
+
+//using PracticeCode.MyNamespaceOne;
 //using PracticeCode.MyNamespaceTwo;
 
 //// Chapter One

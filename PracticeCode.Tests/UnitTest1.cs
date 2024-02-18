@@ -1,5 +1,6 @@
 using PracticeCode.MyNamespaceOne;
 using static PracticeCode.MyNamespaceOne.Sample;
+using static PracticeCode.MyNamespaceTwo.MyClassOne;
 
 namespace PracticeCode.Tests;
 
@@ -132,4 +133,92 @@ public class Tests
         resultId.Should().Be(expectedId);
         resultCompanyName.Should().Be(expectedCompanyName);
     }
+
+    [Test]
+    public void DecimalCalculation_ShouldBePrecies()
+    {
+        // Arrange
+        var b = 6;
+        var expectedValue = (decimal)10.0 / b;
+
+        // Act
+        var actualValue = FinancialCalculations.DecimalCalculation(10.0m, b);
+
+        // Assert
+        actualValue.Should().Be(expectedValue);
+    }
+
+    [Test]
+    public void DoubleCalculation_ShouldBeApproximate()
+    {
+        // Arrange
+        var b = 6;
+        var expectedValue = 10.0 / b;
+
+        // Act
+        var actualValue = FinancialCalculations.DoubleCalculation(10.0, b);
+
+        // Assert
+        actualValue.Should().BeApproximately(expectedValue, 0.0001);
+    }
+
+    [Test]
+    public void FloatCalculation_ShouldBeApproximate()
+    {
+        //Arrange
+        var b = 6;
+        var expectedValue = (float)10.0 / b;
+
+        // Act
+        var actualValue = FinancialCalculations.FloatCalculation(10.0f, b);
+
+        // Assert
+        actualValue.Should().BeApproximately(expectedValue, 0.0001f);
+    }
+
+    [Test]
+    public void ProcessPayment_WithPositiveAmount_ShouldReturnTrue()
+    {
+        // Arrange
+        IPaymentProcessor paymentProcessor = new CreditCardProcessor();
+        decimal paymentAmount = 100m;
+
+        // Act
+        bool result = paymentProcessor.ProceessPayment(paymentAmount);
+
+        // Assert
+        result.Should().BeTrue();
+    }
+
+    [Test]
+    public void ProcessPayment_WithNegativeAmount_ShouldReturnFalse()
+    {
+        // Arrange
+        IPaymentProcessor paymentProcessor = new CreditCardProcessor();
+        decimal paymentAmount = -100m;
+
+        // Act
+        bool result = paymentProcessor.ProceessPayment(paymentAmount);
+
+        // Assert
+        result.Should().BeFalse();
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
